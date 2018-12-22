@@ -1,5 +1,7 @@
 ###  MSI GL72M 7RDX Hackintosh Laptop
 
+This is a Clover install for MacOS High Sierra 10.13.6
+
 ### Working 
 
 - Swapped in a Broadcom DW1820A BCM94350ZAE 2.4G/5G Dual Band 867Mbps M.2 NGFF WiFi Card with Bluetooth 4.1  
