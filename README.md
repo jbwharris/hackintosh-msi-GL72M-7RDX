@@ -24,3 +24,8 @@ This is a Clover install for MacOS High Sierra 10.13.6
 ### Untested Components
 - Display port
 - SD card reader
+
+
+### Fixing Bluetooth on BCM94350ZAE
+
+Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/ using Kext Utility
