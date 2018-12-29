@@ -1,4 +1,4 @@
-###  MSI GL72M 7RDX Hackintosh Laptop
+#  MSI GL72M 7RDX Hackintosh Laptop
 
 This is a Clover install for MacOS High Sierra 10.13.2
 
