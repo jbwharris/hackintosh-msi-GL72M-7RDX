@@ -4,23 +4,23 @@ This is a Clover install for MacOS High Sierra 10.13.2
 
 ### Functioning Components 
 
-- Intel HD 630 1536mb working
-- Wifi  
-- USB C/3.0 hub seems to work and allow me to plugin additional USB items, but ethernet and HDMI passthrough do not work
-- HDMI
-- Ethernet port
-- Audio 
-- Microphone
-- Webcam 
+- [x] Intel HD 630 1536mb working
+- [x] Wifi  
+- [x] USB C/3.0 hub seems to work and allow me to plugin additional USB items, but ethernet and HDMI passthrough do not work
+- [x] HDMI
+- [x] Ethernet port
+- [x] Audio 
+- [x] Microphone
+- [x] Webcam 
 
 ### Non-Functioning Components
 
-- nVidia GTX 1050 is disabled, may see about getting it working, which I why I stuck with High Sierra with this build as the Mojave drivers are still unreleased
-- Bluetooth isn't working on the new card
-- Brightness controls
-- Sleep/wake
-- Brightness/dimming for keyboard
-- SD card reader
+- [ ] nVidia GTX 1050 is disabled, may see about getting it working, which I why I stuck with High Sierra with this build as the Mojave drivers are still unreleased
+- [ ] Bluetooth isn't working on the new card
+- [ ] Brightness controls
+- [ ] Sleep/wake
+- [ ] Brightness/dimming for keyboard
+- [ ] SD card reader
 
 ### Untested Components
 - Display port
