@@ -6,7 +6,7 @@ This is a Clover install for MacOS High Sierra 10.13.2
 
 - [x] Intel HD 630 1536mb working
 - [x] Wifi  
-- [x] USB C/3.0 hub seems to work and allow me to plugin additional USB items, but ethernet and HDMI passthrough do not work
+- [x] USB C/3.0 
 - [x] HDMI
 - [x] Ethernet port
 - [x] Audio 
@@ -32,6 +32,9 @@ I purchased a Broadcom DW1820A BCM94350ZAE 2.4G/5G Dual Band 867Mbps M.2 NGFF Wi
 
 ### Hard Drive
 Swapped out the stock drive for a Seagate FireCuda ST1000LX015 - hybrid hard drive - 1 TB - SATA 6Gb/s
+
+### USB C Hub
+Hub works and allows me to plugin additional USB items, but ethernet and HDMI passthrough do not work
 
 ## Installation Notes
 
