@@ -12,6 +12,7 @@ This is a Clover install for MacOS High Sierra 10.13.2
 - [x] Audio 
 - [x] Microphone
 - [x] Webcam 
+- [x] iMessage/Facetime
 
 ### Non-Functioning Components
 
@@ -39,7 +40,6 @@ Hub works and allows me to plugin additional USB items, but ethernet and HDMI pa
 ## Installation Notes
 
 ### Fixing Bluetooth on BCM94350ZAE
-
 Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/ using Kext Utility to Library/Extensions. Did not work.
 
 ### Fixed audio using AppleHDA Patcher 1.9
@@ -51,8 +51,15 @@ Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bi
 ### Webcam Functionality
 - The webcam does work, though it needs to be activated using the keyboard shortcut of Function + F6. I found this is a little sketchy as it didn't work if I needed it in the browser unless I already had the webcam active in Photo Booth after using the shortcut. 
 
+### Screen Brightness 
+- Screen brightness still isn't working, but I do now have a control. It appeared after I followed these steps in [this forum post](https://www.tonymacx86.com/threads/solved-black-screen-after-upgrade-to-high-sierra.237050/page-2#post-1633911).
 
 ## Useful Resource Links
-
 - Successful GL72M 7RDX Sierra build - https://www.tonymacx86.com/threads/msi-gl72m-7rdx-sierra-10-12-6-succes.236359/
 - Sleep/wake for HD 630? - https://www.reddit.com/r/hackintosh/comments/9fsf18/should_i_be_able_to_achieve_sleepwake_intel_hd/
+
+### Keyboard Usage Notes
+- The brightness controls seem to be similar to where they'd appear on a Mac keyboard, using the scroll lock and pause break button. Using the function + up/down doesn't seem to do anything
+- Function is mapped to the Option key
+- Windows key is mapped to Function
+- Function + F12 puts the laptop to sleep

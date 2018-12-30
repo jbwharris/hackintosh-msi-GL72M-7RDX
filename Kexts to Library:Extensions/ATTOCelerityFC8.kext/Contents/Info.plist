@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>12F2560</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>ATTOCelerityFC8</string>
+	<key>CFBundleGetInfoString</key>
+	<string>ATTO Celerity FC Driver 2.56 Copyright 2008-2016, ATTO Technology, Inc.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.ATTO.driver.ATTOCelerityFC8</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>ATTOCelerityFC8</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.5.6</string>
+	<key>CFBundleSignature</key>
+	<string>ATTO</string>
+	<key>CFBundleVersion</key>
+	<string>2.5.6</string>
+	<key>DTCompiler</key>
+	<string>4.0</string>
+	<key>DTPlatformBuild</key>
+	<string>10M2518</string>
+	<key>DTPlatformVersion</key>
+	<string>PG</string>
+	<key>DTSDKBuild</key>
+	<string>12F2560</string>
+	<key>DTSDKName</key>
+	<string></string>
+	<key>DTXcode</key>
+	<string>0400</string>
+	<key>DTXcodeBuild</key>
+	<string>10M2518</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>ATTOCelerityFC8</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.ATTO.driver.ATTOCelerityFC8</string>
+			<key>CFBundleVersion</key>
+			<string>2.5.6</string>
+			<key>IOClass</key>
+			<string>ATTOCelerityFC8Controller</string>
+			<key>IOKitDebug</key>
+			<integer>0</integer>
+			<key>IOMediaIcon</key>
+			<dict>
+				<key>CFBundleIdentifier</key>
+				<string>com.ATTO.driver.ATTOCelerityFC8</string>
+				<key>IOBundleResourceFile</key>
+				<string>mediafc.icns</string>
+			</dict>
+			<key>IONameMatch</key>
+			<array>
+				<string>ATTO,CelerityFC8</string>
+				<string>pci117c,3a</string>
+				<string>pci117c,3b</string>
+				<string>pci117c,3c</string>
+				<string>pci117c,47</string>
+				<string>pci117c,48</string>
+			</array>
+			<key>IOPCIPauseCompatible</key>
+			<true/>
+			<key>IOPCITunnelCompatible</key>
+			<true/>
+			<key>IOProbeScore</key>
+			<integer>100</integer>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+			<key>IOUserClientClass</key>
+			<string>ATTOCelerityFC8UserClient</string>
+			<key>Physical Interconnect</key>
+			<string>Fibre Channel Interface</string>
+			<key>Physical Interconnect Location</key>
+			<string>External</string>
+			<key>Protocol Characteristics</key>
+			<dict>
+				<key>Multiple Initiators</key>
+				<string>True</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.iokit.IOPCIFamily</key>
+		<string>1.6</string>
+		<key>com.apple.iokit.IOSCSIParallelFamily</key>
+		<string>1.4.0</string>
+		<key>com.apple.kpi.bsd</key>
+		<string>8.0.0</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>8.0.0</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>8.0.0</string>
+		<key>com.apple.kpi.mach</key>
+		<string>8.0.0</string>
+	</dict>
+	<key>OSBundleRequired</key>
+	<string>Local-Root</string>
+</dict>
+</plist>
