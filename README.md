@@ -2,6 +2,14 @@
 
 This is a Clover install for MacOS High Sierra 10.13.2
 
+###MSI GL72M 7RDX Laptop Specs
+- Core i7 7700HQ
+- Intel HD 630
+- GeForce® GTX 1050 with 2GB GDDR5
+- Intel® HM175 chipset
+- Realtek ALC898
+- 16gb 2400mhz DDR4
+
 ### Functioning Components 
 
 - [x] Intel HD 630 1536mb working
