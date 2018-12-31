@@ -49,7 +49,7 @@ Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bi
 - Note injected audio ID is 98 for this MSI laptop. Seems a little unconventional, but it seems to be common on sibling model MSI laptops
 
 ### Webcam Functionality
-- The webcam does work, though it needs to be activated using the keyboard shortcut of Function + F6. I found this is a little sketchy as it didn't work if I needed it in the browser unless I already had the webcam active in Photo Booth after using the shortcut. 
+- The webcam does work, though it needs to be activated using the keyboard shortcut of Function + F6. I found this is a little sketchy as it didn't work if I needed it in the browser unless I already had the webcam active in Photo Booth after using the shortcut. Though once I had it working, it seems to be working on-going without needing to be pre-started like that.
 
 ### Screen Brightness 
 - Screen brightness still isn't working, but I do now have a control. It appeared after I followed these steps in [this forum post](https://www.tonymacx86.com/threads/solved-black-screen-after-upgrade-to-high-sierra.237050/page-2#post-1633911).
