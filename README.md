@@ -53,7 +53,7 @@ Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bi
 ### Fixed audio using AppleHDA Patcher 1.9
 - Ran AppleHDA Patcher 1.9, dropped my config.plist and the latest AppleHDA.kext into the app
 - Under laptop picked Realtek ALC 898
-- Added CodecCommander.kext and aDummyHDA.kext to System/Library/Extensions and audio started working. I tried just Libary/Extensions, but it seemed to only work in the system folder
+- Added CodecCommander.kext and aDummyHDA.kext to System/Library/Extensions and audio started working. I tried just Library/Extensions, but it seemed to only work in the system folder
 - Note injected audio ID is 98 for this MSI laptop. Seems a little unconventional, but it seems to be common on sibling model MSI laptops
 
 ### Webcam Functionality
