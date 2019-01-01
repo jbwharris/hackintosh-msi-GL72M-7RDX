@@ -2,7 +2,7 @@
 
 This is a Clover install for MacOS High Sierra 10.13.2
 
-###MSI GL72M 7RDX Laptop Specs
+### MSI GL72M 7RDX Laptop Specs
 - Core i7 7700HQ
 - Intel HD 630
 - GeForce® GTX 1050 with 2GB GDDR5
@@ -53,7 +53,7 @@ Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bi
 ### Fixed audio using AppleHDA Patcher 1.9
 - Ran AppleHDA Patcher 1.9, dropped my config.plist and the latest AppleHDA.kext into the app
 - Under laptop picked Realtek ALC 898
-- Added CodecCommander.kext and aDummyHDA.kext to System/Library/Extensions and audio started working.
+- Added CodecCommander.kext and aDummyHDA.kext to System/Library/Extensions and audio started working. I tried just Libary/Extensions, but it seemed to only work in the system folder
 - Note injected audio ID is 98 for this MSI laptop. Seems a little unconventional, but it seems to be common on sibling model MSI laptops
 
 ### Webcam Functionality
@@ -65,6 +65,7 @@ Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bi
 ## Useful Resource Links
 - Successful GL72M 7RDX Sierra build - https://www.tonymacx86.com/threads/msi-gl72m-7rdx-sierra-10-12-6-succes.236359/
 - Sleep/wake for HD 630? - https://www.reddit.com/r/hackintosh/comments/9fsf18/should_i_be_able_to_achieve_sleepwake_intel_hd/
+- USB port limit fix - https://hackintosher.com/forums/thread/list-of-hackintosh-usb-port-limit-patches-10-14-updated.467/
 
 ### Keyboard Usage Notes
 - The brightness controls seem to be similar to where they'd appear on a Mac keyboard, using the scroll lock and pause break button. Using the function + up/down doesn't seem to do anything
