@@ -21,13 +21,13 @@ This is a Clover install for MacOS High Sierra 10.13.2
 - [x] Microphone
 - [x] Webcam 
 - [x] iMessage/Facetime
+- [x] Sleep/Wake functionality
 
 ### Non-Functioning Components
 
 - [ ] nVidia GTX 1050 is disabled, may see about getting it working, which I why I stuck with High Sierra with this build as the Mojave drivers are still unreleased
 - [ ] Bluetooth isn't working on the new card
 - [ ] Brightness controls
-- [ ] Sleep/wake
 - [ ] Brightness/dimming for keyboard
 - [ ] SD card reader
 
@@ -59,8 +59,10 @@ Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bi
 ### Webcam Functionality
 - The webcam does work, though it needs to be activated using the keyboard shortcut of Function + F6. I found this is a little sketchy as it didn't work if I needed it in the browser unless I already had the webcam active in Photo Booth after using the shortcut. Though once I had it working, it seems to be working on-going without needing to be pre-started like that.
 
-### Screen Brightness 
+### Screen Brightness / Sleep Wake
 - Screen brightness still isn't working, but I do now have a control. It appeared after I followed these steps in [this forum post](https://www.tonymacx86.com/threads/solved-black-screen-after-upgrade-to-high-sierra.237050/page-2#post-1633911).
+- In following the same process I was able to get the sleep/wake working. I implemented the settings found in [RehabMan's config_HD615_620_630_640_650_spoof.plist]
+(https://github.com/RehabMan/OS-X-Clover-Laptop-Config/blob/master/config_HD615_620_630_640_650_spoof.plist) to my config and got wake to work. The outstanding issue is when it wakes there is a flicker to the screen.
 
 ## Useful Resource Links
 - Successful GL72M 7RDX Sierra build - https://www.tonymacx86.com/threads/msi-gl72m-7rdx-sierra-10-12-6-succes.236359/
