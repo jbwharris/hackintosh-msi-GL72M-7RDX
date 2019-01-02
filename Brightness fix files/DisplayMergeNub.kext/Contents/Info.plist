@@ -54,33 +54,50 @@
 			<string>AppleBacklightDisplay</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
+				<key>AppleDisplayType</key>
+				<integer>2</integer>
+				<key>AppleSense</key>
+				<integer>1854</integer>
 				<key>DisplayProductID</key>
-				<integer>40178</integer>
+				<integer>40978</integer>
 				<key>DisplayVendorID</key>
 				<integer>1552</integer>
 				<key>IOClass</key>
 				<string>AppleBacklightDisplay</string>
+				<key>IODisplayCapabilityString</key>
+				<data>
+				bW9kZWwoaU1hYyBDZWxsbykgdmNwKDEwIDhEIEI2IEM4
+				IEM5IERGKSB2ZXIoMi4yKQ==
+				</data>
 				<key>IODisplayConnectFlags</key>
 				<data>
-				AAgAAA==
+				hEkAAA==
+				</data>
+				<key>IODisplayControllerID</key>
+				<data>
+				AQAAAA==
 				</data>
 				<key>IODisplayEDID</key>
 				<data>
-				AP///////wAGEPKcAAAAABoVAQSVGg54Au8Fl1dUkici
+				AP///////wAGEBKgAAAAABwWAQS1MBt4Im+xp1VMniUM
 				UFQAAAABAQEBAQEBAQEBAQEBAQEBsDaAtnA4HkAwIDUA
-				ftcQAAAYAAAA/ABDb2xvciBMQ0QKICAgAAAA/QA4TB5T
-				EQAKICAgICAgAAAA/gBOMTczSEdFLUUxMQogADA=
+				ftcQAAAYAAAA/ABpTWFjCiAgICAgICAgAAAA/gBDTU4K
+				ICAgICAgICAgAAAA/gBOMTczSEdFLUUxMQogAB8=
 				</data>
-				<key>IODisplayGUID</key>
-				<integer>436849163854938112</integer>
+				<key>IODisplayFirmwareLevel</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>IODisplayMCCSVersion</key>
+				<data>
+				AAICAA==
+				</data>
 				<key>IODisplayPrefsKey</key>
-				<string>IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/IGPU@2/AppleIntelFramebuffer@0/display0/AppleBacklightDisplay-610-9cf2</string>
-				<key>scale-resolutions</key>
-				<array>
-					<data>
-					AAAHgAAABDgAAAABACAAAA==
-					</data>
-				</array>
+				<string>IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/IGPU@2/AppleIntelFramebuffer@0/display0/AppleBacklightDisplay-610-a012</string>
+				<key>IODisplayTechnologyType</key>
+				<data>
+				//8CAw==
+				</data>
 			</dict>
 			<key>IgnoreDisplayPrefs</key>
 			<true/>

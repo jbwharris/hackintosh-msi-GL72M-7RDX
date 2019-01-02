@@ -3,20 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>DisplayProductID</key>
-	<integer>40178</integer>
+	<integer>40978</integer>
 	<key>DisplayVendorID</key>
 	<integer>1552</integer>
 	<key>IODisplayEDID</key>
 	<data>
-	AP///////wAGEPKcAAAAABoVAQSVGg54Au8Fl1dUkiciUFQAAAABAQEBAQEBAQEBAQEB
-	AQEBsDaAtnA4HkAwIDUAftcQAAAYAAAA/ABDb2xvciBMQ0QKICAgAAAA/QA4TB5TEQAK
-	ICAgICAgAAAA/gBOMTczSEdFLUUxMQogADA=
+	AP///////wAGEBKgAAAAABwWAQS1MBt4Im+xp1VMniUMUFQAAAABAQEBAQEBAQEBAQEB
+	AQEBsDaAtnA4HkAwIDUAftcQAAAYAAAA/ABpTWFjCiAgICAgICAgAAAA/gBDTU4KICAg
+	ICAgICAgAAAA/gBOMTczSEdFLUUxMQogAB8=
 	</data>
-	<key>scale-resolutions</key>
-	<array>
-		<data>
-		AAAHgAAABDgAAAABACAAAA==
-		</data>
-	</array>
 </dict>
 </plist>
