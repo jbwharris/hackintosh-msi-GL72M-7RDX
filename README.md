@@ -61,8 +61,7 @@ Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bi
 
 ### Screen Brightness / Sleep Wake
 - Screen brightness still isn't working, but I do now have a control. It appeared after I followed these steps in [this forum post](https://www.tonymacx86.com/threads/solved-black-screen-after-upgrade-to-high-sierra.237050/page-2#post-1633911).
-- In following the same process I was able to get the sleep/wake working. I implemented the settings found in [RehabMan's config_HD615_620_630_640_650_spoof.plist]
-(https://github.com/RehabMan/OS-X-Clover-Laptop-Config/blob/master/config_HD615_620_630_640_650_spoof.plist) to my config and got wake to work. The outstanding issue is when it wakes there is a flicker to the screen.
+- In following the same process I was able to get the sleep/wake working. I implemented the settings found in [RehabMan's config_HD615_620_630_640_650_spoof.plist](https://github.com/RehabMan/OS-X-Clover-Laptop-Config/blob/master/config_HD615_620_630_640_650_spoof.plist) to my config and got wake to work. The outstanding issue is when it wakes there is a flicker to the screen.
 
 ## Useful Resource Links
 - Successful GL72M 7RDX Sierra build - https://www.tonymacx86.com/threads/msi-gl72m-7rdx-sierra-10-12-6-succes.236359/
