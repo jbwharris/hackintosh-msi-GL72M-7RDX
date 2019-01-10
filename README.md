@@ -1,6 +1,6 @@
 #  MSI GL72M 7RDX Hackintosh Laptop
 
-This is a Clover install for MacOS High Sierra 10.13.2
+This is a Clover install for MacOS High Sierra 10.13.6. Still a few things to address, but the major stuff work properly.
 
 ### MSI GL72M 7RDX Laptop Specs
 - Core i7 7700HQ
@@ -8,7 +8,10 @@ This is a Clover install for MacOS High Sierra 10.13.2
 - GeForce® GTX 1050 with 2GB GDDR5
 - Intel® HM175 chipset
 - Realtek ALC898
+- 17.3" HD display 1920x1080
 - 16gb 2400mhz DDR4
+- 1TB Seagate FireCuda ST1000LX015
+- Broadcom DW1820A BCM94350ZAE 2.4G/5G Dual Band 867Mbps M.2 NGFF WiFi Card with Bluetooth 4.1
 
 ### Functioning Components 
 
@@ -31,7 +34,7 @@ This is a Clover install for MacOS High Sierra 10.13.2
 - [ ] SD card reader
 
 ### Untested Components
-- Display port
+- Display port, just waiting for an adapter to come
 
 ## Upgrades
 
@@ -42,7 +45,7 @@ I purchased a Broadcom DW1820A BCM94350ZAE 2.4G/5G Dual Band 867Mbps M.2 NGFF Wi
 Swapped out the stock drive for a Seagate FireCuda ST1000LX015 - hybrid hard drive - 1 TB - SATA 6Gb/s
 
 ### USB C Hub
-Hub works and allows me to plugin additional USB items, but ethernet and HDMI passthrough do not work
+Hub works and allows me to plugin additional USB items, but ethernet and HDMI passthrough do not work currently.
 
 ## Installation Notes
 
@@ -61,19 +64,24 @@ Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bi
 ### Screen Brightness / Sleep Wake
 - Screen brightness still isn't working, but I do now have a control. It appeared after I followed these steps in [this forum post](https://www.tonymacx86.com/threads/solved-black-screen-after-upgrade-to-high-sierra.237050/page-2#post-1633911).
 - In following the same process I was able to get the sleep/wake working. I implemented the settings found in [RehabMan's config_HD615_620_630_640_650_spoof.plist](https://github.com/RehabMan/OS-X-Clover-Laptop-Config/blob/master/config_HD615_620_630_640_650_spoof.plist) to my config and got wake to work. The outstanding issue is when it wakes there is a flicker to the screen.
+- Implemented WhateverGreen Device/Property patches and finally got rid of the flicker 
 
 ### Restart on Shutdown Fix
 - Added FixShutdown fix in Clover Configurator
 - Turned off "Wake for network access" in Energy Preferences
 
 ### WhateverGreen & IntelGraphicsDVMTFixup
-- I've struggled to get WhateverGreen to work properly. I'm believe I shouldn't need the older IntelFixup files, but with 10.13.6 I would get a kernel panic without IntelGraphicsDVMTFixup.kext in my clover kexts.
+- Was able to replace IntelGraphicsDVMTFixup using [this patch](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.Intel.md)
+
+### Updated BIOS
+- Lost keyboard and mouse usage until I updated the DSDT from the new BIOS
 
 ## Useful Resource Links
 - Successful GL72M 7RDX Sierra build - https://www.tonymacx86.com/threads/msi-gl72m-7rdx-sierra-10-12-6-succes.236359/
 - Sleep/wake for HD 630? - https://www.reddit.com/r/hackintosh/comments/9fsf18/should_i_be_able_to_achieve_sleepwake_intel_hd/
 - USB port limit fix - https://hackintosher.com/forums/thread/list-of-hackintosh-usb-port-limit-patches-10-14-updated.467/
 - Framebuffer stuff https://www.insanelymac.com/forum/topic/334899-intel-framebuffer-patching-using-whatevergreen/
+- WhateverGreen Audio (unimplemented) - https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/post-1790068
 
 ### Keyboard Usage Notes
 - The brightness controls seem to be similar to where they'd appear on a Mac keyboard, using the scroll lock and pause break button. Using the function + up/down doesn't seem to do anything
