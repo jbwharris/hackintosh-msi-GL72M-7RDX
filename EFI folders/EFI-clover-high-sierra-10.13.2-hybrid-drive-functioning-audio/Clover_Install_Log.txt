@@ -1,0 +1,77 @@
+
+Clover EFI installer log - Tue Sep  4 13:21:13 WIB 2018
+Installer version: v2.4k r4658 EFI bootloader
+======================================================
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *120.0 GB   disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:                  Apple_HFS Macintosh SSD           119.2 GB   disk0s2
+   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+
+/dev/disk1 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *500.1 GB   disk1
+   1:                  Apple_HFS                         209.7 MB   disk1s1
+   2:                  Apple_HFS Data OSX                499.8 GB   disk1s2
+
+/dev/disk2 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *2.0 TB     disk2
+   1:       Microsoft Basic Data Data Master Game        2.0 TB     disk2s1
+
+/dev/disk3 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *500.1 GB   disk3
+   1:       Microsoft Basic Data Game Live               500.1 GB   disk3s1
+
+/dev/disk4 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *500.1 GB   disk4
+   1:                  Apple_HFS                         3.1 KB     disk4s2
+   2:                  Apple_HFS Galeri OSX              499.8 GB   disk4s3
+
+/dev/disk5 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *2.0 TB     disk5
+   1:       Microsoft Basic Data Data Program dan Mul... 2.0 TB     disk5s1
+
+/dev/disk6 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *8.0 GB     disk6
+   1:                        EFI EFI                     209.7 MB   disk6s1
+   2:                  Apple_HFS Install macOS High S... 7.7 GB     disk6s2
+
+/dev/disk7 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *120.0 GB   disk7
+   1:         Microsoft Reserved                         16.8 MB    disk7s1
+   2:       Microsoft Basic Data Windows 10 Pro          120.0 GB   disk7s2
+
+/dev/disk8 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *2.0 TB     disk8
+   1:               Windows_NTFS WD My Passp             2.0 TB     disk8s1
+
+No Active Partition
+
+Stage 0 - Writing boot0ss to /dev/rdisk6
+dd if=/dev/rdisk6 count=1 bs=512 of=/tmp/origMBR
+cp /tmp/origMBR /tmp/newMBR
+dd if=/Volumes/Install macOS High Sierra/usr/standalone/i386/boot0ss of=/tmp/newMBR bs=440 count=1 conv=notrunc
+fdisk -f /tmp/newMBR -u -y /dev/rdisk6
+
+Stage 1 - Writing boot1f32 to /dev/rdisk6s1
+dd if=/dev/rdisk6s1 count=1 bs=512 of=/tmp/origbs
+boot volume format is FAT32
+cp /tmp/boot1f32 /tmp/newbs
+dd if=/tmp/origbs of=/tmp/newbs skip=3 seek=3 bs=1 count=87 conv=notrunc
+dd if=/tmp/newbs of=/dev/rdisk6s1
+
+Stage 2 - Written boot6 (x64) to /Volumes/ESP/boot
+
+Theme 'metal' (defined in config.plist) not found !
+Using default theme 'BGM'
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================

@@ -28,7 +28,6 @@ This is a Clover install for MacOS High Sierra 10.13.2
 - [ ] nVidia GTX 1050 is disabled, may see about getting it working, which I why I stuck with High Sierra with this build as the Mojave drivers are still unreleased
 - [ ] Bluetooth isn't working on the new card
 - [ ] Brightness controls
-- [ ] Brightness/dimming for keyboard
 - [ ] SD card reader
 
 ### Untested Components
@@ -63,10 +62,18 @@ Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bi
 - Screen brightness still isn't working, but I do now have a control. It appeared after I followed these steps in [this forum post](https://www.tonymacx86.com/threads/solved-black-screen-after-upgrade-to-high-sierra.237050/page-2#post-1633911).
 - In following the same process I was able to get the sleep/wake working. I implemented the settings found in [RehabMan's config_HD615_620_630_640_650_spoof.plist](https://github.com/RehabMan/OS-X-Clover-Laptop-Config/blob/master/config_HD615_620_630_640_650_spoof.plist) to my config and got wake to work. The outstanding issue is when it wakes there is a flicker to the screen.
 
+### Restart on Shutdown Fix
+- Added FixShutdown fix in Clover Configurator
+- Turned off "Wake for network access" in Energy Preferences
+
+### WhateverGreen & IntelGraphicsDVMTFixup
+- I've struggled to get WhateverGreen to work properly. I'm believe I shouldn't need the older IntelFixup files, but with 10.13.6 I would get a kernel panic without IntelGraphicsDVMTFixup.kext in my clover kexts.
+
 ## Useful Resource Links
 - Successful GL72M 7RDX Sierra build - https://www.tonymacx86.com/threads/msi-gl72m-7rdx-sierra-10-12-6-succes.236359/
 - Sleep/wake for HD 630? - https://www.reddit.com/r/hackintosh/comments/9fsf18/should_i_be_able_to_achieve_sleepwake_intel_hd/
 - USB port limit fix - https://hackintosher.com/forums/thread/list-of-hackintosh-usb-port-limit-patches-10-14-updated.467/
+- Framebuffer stuff https://www.insanelymac.com/forum/topic/334899-intel-framebuffer-patching-using-whatevergreen/
 
 ### Keyboard Usage Notes
 - The brightness controls seem to be similar to where they'd appear on a Mac keyboard, using the scroll lock and pause break button. Using the function + up/down doesn't seem to do anything
