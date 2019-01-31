@@ -25,10 +25,11 @@ This is a Clover install for MacOS High Sierra 10.13.6. Still a few things to ad
 - [x] Webcam 
 - [x] iMessage/Facetime
 - [x] Sleep/Wake functionality
+- [x] Keyboard brightness 
 
 ### Non-Functioning Components
 
-- [ ] nVidia GTX 1050 is disabled, may see about getting it working, which I why I stuck with High Sierra with this build as the Mojave drivers are still unreleased
+- [ ] nVidia GTX 1050 does work, but I've disabled it in my build
 - [ ] Bluetooth isn't working on the new card
 - [ ] Brightness controls
 - [ ] SD card reader
@@ -45,18 +46,15 @@ I purchased a Broadcom DW1820A BCM94350ZAE 2.4G/5G Dual Band 867Mbps M.2 NGFF Wi
 Swapped out the stock drive for a Seagate FireCuda ST1000LX015 - hybrid hard drive - 1 TB - SATA 6Gb/s
 
 ### USB C Hub
-Hub works and allows me to plugin additional USB items, but ethernet and HDMI passthrough do not work currently.
+Hub works and allows me to plugin additional USB items and read SD cards, but ethernet and HDMI passthrough do not work currently.
 
 ## Installation Notes
 
 ### Fixing Bluetooth on BCM94350ZAE
 Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/ using Kext Utility to Library/Extensions. Did not work.
 
-### Fixed audio using AppleHDA Patcher 1.9
-- Ran AppleHDA Patcher 1.9, dropped my config.plist and the latest AppleHDA.kext into the app
-- Under laptop picked Realtek ALC 898
-- Added CodecCommander.kext and aDummyHDA.kext to System/Library/Extensions and audio started working. I tried just Library/Extensions, but it seemed to only work in the system folder
-- Note injected audio ID is 98 for this MSI laptop. Seems a little unconventional, but it seems to be common on sibling model MSI laptops
+### Audio using WhateverGreen
+- Replaced the AudioPatcher method with an entry under Devices->Properties Devices: PciRoot(0x0)/Pci(0x1f,0x3) Properties Key:layout-id Properties Value: 62000000 Value Type: Data
 
 ### Webcam Functionality
 - The webcam does work, though it needs to be activated using the keyboard shortcut of Function + F6. I found this is a little sketchy as it didn't work if I needed it in the browser unless I already had the webcam active in Photo Booth after using the shortcut. Though once I had it working, it seems to be working on-going without needing to be pre-started like that.
@@ -65,6 +63,11 @@ Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bi
 - Screen brightness still isn't working, but I do now have a control. It appeared after I followed these steps in [this forum post](https://www.tonymacx86.com/threads/solved-black-screen-after-upgrade-to-high-sierra.237050/page-2#post-1633911).
 - In following the same process I was able to get the sleep/wake working. I implemented the settings found in [RehabMan's config_HD615_620_630_640_650_spoof.plist](https://github.com/RehabMan/OS-X-Clover-Laptop-Config/blob/master/config_HD615_620_630_640_650_spoof.plist) to my config and got wake to work. The outstanding issue is when it wakes there is a flicker to the screen.
 - Implemented WhateverGreen Device/Property patches and finally got rid of the flicker 
+
+### Sleep Working
+- I followed [this post](https://www.tonymacx86.com/threads/guide-msi-gf62vr-7rf-high-sierra-10-13-2.241725/) and was able to adapt the approach from a similar MSI laptop to get it working for my laptop
+- There are still some weirdness, but the machine will truly go to sleep. I need to activate it by going to Apple->Sleep for it to work. This will turn off the backlight of the keyboard and result in the power button glowing in and out blue. Just going to my hot corner or letting the machine just go to sleep on it's own just seems to put the monitor to sleep.
+- When the laptop wakes the light switches from blue to red, indicating that it's switched to the GTX 1050 to run. I'm honestly not sure how that works, since I've disabled the card, but when running that card, the brightness controls work. 
 
 ### Restart on Shutdown Fix
 - Added FixShutdown fix in Clover Configurator
@@ -75,6 +78,10 @@ Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bi
 
 ### Updated BIOS
 - Lost keyboard and mouse usage until I updated the DSDT from the new BIOS
+
+### Getting the GTX 1050 working
+- I was able to get NVidia card functioning. I installed the NVidia Web Drivers and CUDA, but just found there it didn't get me much further ahead than with the HD 630. May revisit at some point.
+- If you're interested in messing around with it, there's an EFI folder called EFI-gtx-1050-working
 
 ## Useful Resource Links
 - Successful GL72M 7RDX Sierra build - https://www.tonymacx86.com/threads/msi-gl72m-7rdx-sierra-10-12-6-succes.236359/
@@ -88,3 +95,4 @@ Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bi
 - Function is mapped to the Option key
 - Windows key is mapped to Function
 - Function + F12 puts the laptop to sleep
+- Keyboard brightness is function + plus/minus keys on the num pad
