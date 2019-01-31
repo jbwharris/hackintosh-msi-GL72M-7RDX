@@ -18,7 +18,6 @@ This is a Clover install for MacOS High Sierra 10.13.6. Still a few things to ad
 - [x] Intel HD 630 1536mb working
 - [x] Wifi  
 - [x] USB C/3.0 
-- [x] HDMI
 - [x] Ethernet port
 - [x] Audio 
 - [x] Microphone
@@ -33,9 +32,8 @@ This is a Clover install for MacOS High Sierra 10.13.6. Still a few things to ad
 - [ ] Bluetooth isn't working on the new card
 - [ ] Brightness controls
 - [ ] SD card reader
-
-### Untested Components
-- Display port, just waiting for an adapter to come
+- [ ] Display Port
+- [ ] HDMI regression, worked before switching to WhateverGreen
 
 ## Upgrades
 
@@ -47,6 +45,9 @@ Swapped out the stock drive for a Seagate FireCuda ST1000LX015 - hybrid hard dri
 
 ### USB C Hub
 Hub works and allows me to plugin additional USB items and read SD cards, but ethernet and HDMI passthrough do not work currently.
+
+### WD Blue 3D NAND 250GB PC SSD - SATA III 6 Gb/s M.2 2280 Solid State Drive
+New drive is in the mail. Looking forward to getting this going as my boot drive. 
 
 ## Installation Notes
 
