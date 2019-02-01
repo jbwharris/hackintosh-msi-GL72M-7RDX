@@ -938,50 +938,10 @@
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
-		<key>BiosReleaseDate</key>
-		<string>09/17/2018</string>
-		<key>BiosVendor</key>
-		<string>Apple Inc.</string>
-		<key>BiosVersion</key>
-		<string>MBA61.88Z.0108.B00.1809171520</string>
-		<key>Board-ID</key>
-		<string>Mac-35C1E88140C3E6CF</string>
-		<key>BoardManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>BoardSerialNumber</key>
-		<string>C2Q4443004NFD09UE</string>
-		<key>BoardType</key>
-		<integer>10</integer>
-		<key>BoardVersion</key>
-		<string>1.0</string>
-		<key>ChassisAssetTag</key>
-		<string>Air-Enclosure</string>
-		<key>ChassisManufacturer</key>
-		<string>Apple Inc.</string>
-		<key>ChassisType</key>
-		<string>0x0A</string>
-		<key>EfiVersion</key>
-		<string>110.0.0.0.0</string>
-		<key>Family</key>
-		<string>MacBook Air</string>
-		<key>FirmwareFeatures</key>
-		<string>0xE00FE137</string>
-		<key>FirmwareFeaturesMask</key>
-		<string>0xFF1FFF3F</string>
-		<key>LocationInChassis</key>
-		<string>Part Component</string>
-		<key>Manufacturer</key>
-		<string>Apple Inc.</string>
 		<key>Mobile</key>
 		<true/>
-		<key>PlatformFeature</key>
-		<string>0xFFFF</string>
 		<key>ProductName</key>
 		<string>MacBookAir6,1</string>
-		<key>SerialNumber</key>
-		<string>C2QNMSZAFKYN</string>
-		<key>SmUUID</key>
-		<string>7BEC0114-3906-4E6B-932E-9B3EF40B494C</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
