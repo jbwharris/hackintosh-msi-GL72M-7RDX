@@ -1,6 +1,6 @@
 #  MSI GL72M 7RDX Hackintosh Laptop
 
-This is a Clover install for MacOS High Sierra 10.13.6. Still a few things to address, but the major stuff work properly.
+This is a Clover install for MacOS High Sierra 10.13.6. This build is getting close to perfect. The only big outstanding issue is getting HDMI out to work again.
 
 ### MSI GL72M 7RDX Laptop Specs
 - Core i7 7700HQ
@@ -21,16 +21,16 @@ This is a Clover install for MacOS High Sierra 10.13.6. Still a few things to ad
 - [x] Ethernet port
 - [x] Audio 
 - [x] Microphone
-- [x] Webcam 
 - [x] iMessage/Facetime
 - [x] Sleep/Wake functionality
 - [x] Keyboard brightness 
+- [x] Screen brightness adjustment
+- [x] Webcam
+- [x] Bluetooth 
 
 ### Non-Functioning Components
 
 - [ ] nVidia GTX 1050 does work, but I've disabled it in my build
-- [ ] Bluetooth isn't working on the new card
-- [ ] Brightness controls
 - [ ] SD card reader
 - [ ] Display Port
 - [ ] HDMI regression, worked before switching to WhateverGreen
@@ -44,7 +44,7 @@ I purchased a Broadcom DW1820A BCM94350ZAE 2.4G/5G Dual Band 867Mbps M.2 NGFF Wi
 Swapped out the stock drive for a Seagate FireCuda ST1000LX015 - hybrid hard drive - 1 TB - SATA 6Gb/s
 
 ### USB C Hub
-Hub works and allows me to plugin additional USB items and read SD cards, but ethernet and HDMI passthrough do not work currently.
+Hub works and allows me to plugin additional USB items and read SD cards, but HDMI passthrough do not work currently. The ethernet connection does work, so I can just plugin the hub and be connected to a wired connection automatically.
 
 ### WD Blue 3D NAND 250GB PC SSD - SATA III 6 Gb/s M.2 2280 Solid State Drive
 New drive is in the mail. Looking forward to getting this going as my boot drive. 
@@ -52,23 +52,25 @@ New drive is in the mail. Looking forward to getting this going as my boot drive
 ## Installation Notes
 
 ### Fixing Bluetooth on BCM94350ZAE
-Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/ using Kext Utility to Library/Extensions. Did not work.
+Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/ using Kext Utility to Library/Extensions. Found out why it wasn't working was because my USB ports were messed up. I used Hackintool 1.8.2 to figure out which ports were which and this fixed my Bluetooth issue, as well as my webcam regression.
 
-### Audio using WhateverGreen
+### USB Port Limit 
+I used Hackintool 1.8.2 to fix my USB ports, along with a few other issues. It generated a new USBPorts.kext for my system and installed L/E
+
+### Audio using WhateverGreen (was working, now not)
 - Replaced the AudioPatcher method with an entry under Devices->Properties Devices: PciRoot(0x0)/Pci(0x1f,0x3) Properties Key:layout-id Properties Value: 62000000 Value Type: Data
+- I reverted to using Devices/Inject Audio 98 in my config.plist and my audio started working again. Left the WEG setup in here in case it's useful to anyone else.
 
 ### Webcam Functionality
 - The webcam does work, though it needs to be activated using the keyboard shortcut of Function + F6. I found this is a little sketchy as it didn't work if I needed it in the browser unless I already had the webcam active in Photo Booth after using the shortcut. Though once I had it working, it seems to be working on-going without needing to be pre-started like that.
 
 ### Screen Brightness / Sleep Wake
-- Screen brightness still isn't working, but I do now have a control. It appeared after I followed these steps in [this forum post](https://www.tonymacx86.com/threads/solved-black-screen-after-upgrade-to-high-sierra.237050/page-2#post-1633911).
-- In following the same process I was able to get the sleep/wake working. I implemented the settings found in [RehabMan's config_HD615_620_630_640_650_spoof.plist](https://github.com/RehabMan/OS-X-Clover-Laptop-Config/blob/master/config_HD615_620_630_640_650_spoof.plist) to my config and got wake to work. The outstanding issue is when it wakes there is a flicker to the screen.
-- Implemented WhateverGreen Device/Property patches and finally got rid of the flicker 
+- Screen brightness now works. I found [@goldenegg's MSI build](https://www.tonymacx86.com/threads/guide-msi-gf62vr-7rf-high-sierra-10-13-2.241725/) that was quite similar to mine and was able to get screen brightness working. This is huge as I'm not sure I've seen any other builds of similar gen MSI laptops running HD 630s that have this working.
 
 ### Sleep Working
 - I followed [this post](https://www.tonymacx86.com/threads/guide-msi-gf62vr-7rf-high-sierra-10-13-2.241725/) and was able to adapt the approach from a similar MSI laptop to get it working for my laptop
-- There are still some weirdness, but the machine will truly go to sleep. I need to activate it by going to Apple->Sleep for it to work. This will turn off the backlight of the keyboard and result in the power button glowing in and out blue. Just going to my hot corner or letting the machine just go to sleep on it's own just seems to put the monitor to sleep.
-- When the laptop wakes the light switches from blue to red, indicating that it's switched to the GTX 1050 to run. I'm honestly not sure how that works, since I've disabled the card, but when running that card, the brightness controls work. 
+- Following the same instructions I was able to get true sleep and wake to work. The laptop will go to sleep on it's own and with the lid closed. The keyboard backlight turns off and everything.
+- When the laptop wakes the light switches from blue to red, indicating that it's switched to the GTX 1050 to run. It doesn't seem to impact anything, so I'm not too bothered by it at this point.
 
 ### Restart on Shutdown Fix
 - Added FixShutdown fix in Clover Configurator
@@ -89,7 +91,7 @@ Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bi
 - Sleep/wake for HD 630? - https://www.reddit.com/r/hackintosh/comments/9fsf18/should_i_be_able_to_achieve_sleepwake_intel_hd/
 - USB port limit fix - https://hackintosher.com/forums/thread/list-of-hackintosh-usb-port-limit-patches-10-14-updated.467/
 - Framebuffer stuff https://www.insanelymac.com/forum/topic/334899-intel-framebuffer-patching-using-whatevergreen/
-- WhateverGreen Audio (unimplemented) - https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/post-1790068
+- WhateverGreen Audio - https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/post-1790068
 
 ### Keyboard Usage Notes
 - The brightness controls seem to be similar to where they'd appear on a Mac keyboard, using the scroll lock and pause break button. Using the function + up/down doesn't seem to do anything
@@ -97,3 +99,17 @@ Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bi
 - Windows key is mapped to Function
 - Function + F12 puts the laptop to sleep
 - Keyboard brightness is function + plus/minus keys on the num pad
+
+### USB Ports 
+- HS03 USB2 <-- Top left USB2 port
+- HS04 USB2 <-- Bottom left USB2 port
+- HS05 TypeC+Sw <-- Orientation 1
+- HS06 TypeC+Sw <-- Orientation 2
+- HS07 Internal <-- MSI EPF USB, I think this might be the webcam
+- HS08 USB2 <-- Right USB
+- HS10 Internal <-- BCM2045A0 Bluetooth USB Port
+- HS12 Internal <-- USB2.0-CRW SD Card Reader
+- SS02 USB3 <-- Bottom left USB3 port
+- SS03 USB3 <-- Top left USB3 port
+- SS05 TypeC+Sw <-- Orientation 1
+- SS06 TypeC+Sw <-- Orientation 2
