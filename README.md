@@ -1,6 +1,6 @@
 #  MSI GL72M 7RDX Hackintosh Laptop
 
-This is a Clover install for MacOS High Sierra 10.13.6. This build is getting close to perfect. The only big outstanding issue is getting HDMI out to work again.
+This is a Clover install for MacOS Mojave 10.14.2. This build is nearly perfect. This is a vanilla install.
 
 ### MSI GL72M 7RDX Laptop Specs
 - Core i7 7700HQ
@@ -27,13 +27,13 @@ This is a Clover install for MacOS High Sierra 10.13.6. This build is getting cl
 - [x] Screen brightness adjustment
 - [x] Webcam
 - [x] Bluetooth 
+- [x] HDMI
 
 ### Non-Functioning Components
 
 - [ ] nVidia GTX 1050 does work, but I've disabled it in my build
 - [ ] SD card reader
 - [ ] Display Port
-- [ ] HDMI regression, worked before switching to WhateverGreen
 
 ## Upgrades
 
@@ -52,14 +52,16 @@ New drive is in the mail. Looking forward to getting this going as my boot drive
 ## Installation Notes
 
 ### Fixing Bluetooth on BCM94350ZAE
-Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/ using Kext Utility to Library/Extensions. Found out why it wasn't working was because my USB ports were messed up. I used Hackintool 1.8.2 to figure out which ports were which and this fixed my Bluetooth issue, as well as my webcam regression.
+Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/ using Kext Utility to Library/Extensions. Had to make sure SIP was disabled first or this work. Found out why it wasn't working was because my USB ports were messed up. I used Hackintool 1.8.2 to figure out which ports were which and this got Bluetooth to show up in my system preferences. In fixing my HDMI by implementing RehabMan's [config_HD615_620_630_640_650.plist](https://github.com/RehabMan/OS-X-Clover-Laptop-Config/blob/master/config_HD615_620_630_640_650.plist) it seemed to fix my Bluetooth issues too.
+
+### HDMI video out
+It took me awhile to get this working, but using RehabMan's [config_HD615_620_630_640_650.plist](https://github.com/RehabMan/OS-X-Clover-Laptop-Config/blob/master/config_HD615_620_630_640_650.plist) I was able to get HDMI out working properly. 
 
 ### USB Port Limit 
-I used Hackintool 1.8.2 to fix my USB ports, along with a few other issues. It generated a new USBPorts.kext for my system and installed L/E
+I used Hackintool 1.8.2 to fix my USB ports, along with a few other issues. It generated a new USBPorts.kext for my system and installed it in kexts/other
 
 ### Audio using WhateverGreen (was working, now not)
 - Replaced the AudioPatcher method with an entry under Devices->Properties Devices: PciRoot(0x0)/Pci(0x1f,0x3) Properties Key:layout-id Properties Value: 62000000 Value Type: Data
-- I reverted to using Devices/Inject Audio 98 in my config.plist and my audio started working again. Left the WEG setup in here in case it's useful to anyone else.
 
 ### Webcam Functionality
 - The webcam does work, though it needs to be activated using the keyboard shortcut of Function + F6. I found this is a little sketchy as it didn't work if I needed it in the browser unless I already had the webcam active in Photo Booth after using the shortcut. Though once I had it working, it seems to be working on-going without needing to be pre-started like that.
@@ -76,15 +78,17 @@ I used Hackintool 1.8.2 to fix my USB ports, along with a few other issues. It g
 - Added FixShutdown fix in Clover Configurator
 - Turned off "Wake for network access" in Energy Preferences
 
-### WhateverGreen & IntelGraphicsDVMTFixup
-- Was able to replace IntelGraphicsDVMTFixup using [this patch](https://github.com/acidanthera/WhateverGreen/blob/master/Manual/FAQ.Intel.md)
-
-### Updated BIOS
-- Lost keyboard and mouse usage until I updated the DSDT from the new BIOS
-
 ### Getting the GTX 1050 working
 - I was able to get NVidia card functioning. I installed the NVidia Web Drivers and CUDA, but just found there it didn't get me much further ahead than with the HD 630. May revisit at some point.
 - If you're interested in messing around with it, there's an EFI folder called EFI-gtx-1050-working
+
+## Outstanding Issues
+
+### Display Port
+This one I may not be able to get going since I believe it's tied to the GTX 1050. I've never been able to plug anything in and see any life with this connection. It actually causes the laptop to shutdown anytime I connect to it now.
+
+### SD Card Reader
+I have a feeling this might actually work, just haven't tried yet.
 
 ## Useful Resource Links
 - Successful GL72M 7RDX Sierra build - https://www.tonymacx86.com/threads/msi-gl72m-7rdx-sierra-10-12-6-succes.236359/
