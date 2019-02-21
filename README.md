@@ -28,12 +28,12 @@ This is a Clover install for MacOS Mojave 10.14.2. This build is nearly perfect.
 - [x] Webcam
 - [x] Bluetooth 
 - [x] HDMI
+- [x] Mini Display Port
 
 ### Non-Functioning Components
 
 - [ ] nVidia GTX 1050 does work, but I've disabled it in my build
 - [ ] SD card reader
-- [ ] Display Port
 
 ## Upgrades
 
@@ -60,7 +60,7 @@ It took me awhile to get this working, but using RehabMan's [config_HD615_620_63
 ### USB Port Limit 
 I used Hackintool 1.8.2 to fix my USB ports, along with a few other issues. It generated a new USBPorts.kext for my system and installed it in kexts/other
 
-### Audio using WhateverGreen (was working, now not)
+### Audio using WhateverGreen
 - Replaced the AudioPatcher method with an entry under Devices->Properties Devices: PciRoot(0x0)/Pci(0x1f,0x3) Properties Key:layout-id Properties Value: 62000000 Value Type: Data
 
 ### Webcam Functionality
@@ -82,13 +82,16 @@ I used Hackintool 1.8.2 to fix my USB ports, along with a few other issues. It g
 - I was able to get NVidia card functioning. I installed the NVidia Web Drivers and CUDA, but just found there it didn't get me much further ahead than with the HD 630. May revisit at some point.
 - If you're interested in messing around with it, there's an EFI folder called EFI-gtx-1050-working
 
-## Outstanding Issues
-
 ### Display Port
-This one I may not be able to get going since I believe it's tied to the GTX 1050. I've never been able to plug anything in and see any life with this connection. It actually causes the laptop to shutdown anytime I connect to it now.
+Thanks to @effeci I was able to get the display port working. I needed to spoof my [Kaby Lake to Skylake](https://www.tonymacx86.com/threads/readme-common-problems-and-workarounds-on-10-14-mojave.255823/) and it started working properly.
+
+## Outstanding Issues
 
 ### SD Card Reader
 I have a feeling this might actually work, just haven't tried yet.
+
+### Ethernet connection through USB C
+This was working at one point, then stopped working. Still have to figure it out.
 
 ## Useful Resource Links
 - Successful GL72M 7RDX Sierra build - https://www.tonymacx86.com/threads/msi-gl72m-7rdx-sierra-10-12-6-succes.236359/
