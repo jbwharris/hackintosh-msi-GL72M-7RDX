@@ -1,6 +1,6 @@
 #  MSI GL72M 7RDX Hackintosh Laptop
 
-This is a Clover install for MacOS Mojave 10.14.2. This build is nearly perfect. This is a vanilla install.
+This is a Clover install for MacOS Mojave 10.14.2. This build is nearly perfect.
 
 ### MSI GL72M 7RDX Laptop Specs
 - Core i7 7700HQ
