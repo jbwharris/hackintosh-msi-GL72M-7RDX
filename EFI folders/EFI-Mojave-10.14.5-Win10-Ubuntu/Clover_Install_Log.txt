@@ -1,0 +1,81 @@
+
+Clover EFI installer log - Sun Apr 21 14:17:21 EDT 2019
+Installer version: v2.4k r4920 EFI bootloader
+======================================================
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *250.1 GB   disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:                 Apple_APFS Container disk1         249.7 GB   disk0s2
+
+/dev/disk1 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +249.7 GB   disk1
+                                 Physical Store disk0s2
+   1:                APFS Volume Mojave SSD              70.4 GB    disk1s1
+   2:                APFS Volume Preboot                 44.5 MB    disk1s2
+   3:                APFS Volume Recovery                518.2 MB   disk1s3
+   4:                APFS Volume VM                      2.1 GB     disk1s4
+
+/dev/disk2 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *1.0 TB     disk2
+   1:                        EFI EFI                     209.7 MB   disk2s1
+   2:                  Apple_HFS Mojave Backup           499.4 GB   disk2s2
+   3:                 Apple_Boot Recovery HD             650.0 MB   disk2s3
+   4:                  Apple_HFS HS Backup               250.0 GB   disk2s4
+   5:                 Apple_APFS Container disk3         124.8 GB   disk2s5
+   6:                 Apple_APFS Container disk4         124.8 GB   disk2s6
+
+/dev/disk3 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +124.8 GB   disk3
+                                 Physical Store disk2s5
+   1:                APFS Volume Mojave                  48.7 GB    disk3s1
+   2:                APFS Volume Preboot                 44.5 MB    disk3s2
+   3:                APFS Volume Recovery                517.0 MB   disk3s3
+   4:                APFS Volume VM                      8.6 GB     disk3s4
+
+/dev/disk4 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +124.8 GB   disk4
+                                 Physical Store disk2s6
+   1:                APFS Volume Mojave SSD Backup       59.0 GB    disk4s1
+   2:                APFS Volume Preboot                 42.1 MB    disk4s2
+   3:                APFS Volume Recovery                519.6 MB   disk4s3
+
+/dev/disk5 (disk image):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     Apple_partition_scheme                        +10.5 MB    disk5
+   1:        Apple_partition_map                         32.3 KB    disk5s1
+   2:                  Apple_HFS SteerMouse              10.4 MB    disk5s2
+
+/dev/disk6 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *1.0 TB     disk6
+   1:               Windows_NTFS                         104.9 MB   disk6s1
+   2:               Windows_NTFS                         639.2 GB   disk6s2
+   3:                       0x27                         856.7 MB   disk6s3
+
+Target volume /Volumes/Mojave SSD on disk1 is APFS on physical store disk0s2
+======================================================
+Backing up EFI files
+
+Backing up /Volumes/Mojave SSD/EFIROOTDIR/EFI folder to /Volumes/Mojave SSD/EFI-Backups/r4862/2019-04-21-14h17/EFI
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+
+Removing drivers64UEFI/VBoxHfs-64.efi driver because HFSPlus driver present
+======================================================
+Installing RC Scripts
+
+Installing RC scripts on target volume '/'
+
+
+Using default theme 'embedded'
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================

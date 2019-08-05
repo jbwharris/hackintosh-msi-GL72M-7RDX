@@ -1,0 +1,1065 @@
+{
+  "document_type": 1,
+  "document_version": 4,
+  "branch": "hogtown-master-build",
+  "build": 401433,
+  "checksum": "544a5fffeb4e9940a83493d8c5cd0eaabba61074",
+  "commit": "e2dd17baee",
+  "options": {
+    "iterations": 20,
+    "cpu_workers": 0,
+    "memory_workers": 0,
+    "workload_gap": 2
+  },
+  "platform": {
+    "os": "Mac OS X",
+    "architecture": "x86_64",
+    "bits": 64
+  },
+  "processor_frequency": {
+    "minimum": 3080,
+    "maximum": 3575,
+    "median": 3515,
+    "mean": 3474,
+    "stddev": 97.65133385041004,
+    "frequencies": [
+      3560.6361560670989,
+      3509.1267825727277,
+      3493.4594230021135,
+      3343.1706128579249,
+      3528.9601823610733,
+      3374.109104453807,
+      3160.1811112441542,
+      3249.1283807051104,
+      3422.7833259358217,
+      3391.7893530620413,
+      3378.4083959921163,
+      3262.8259485580147,
+      3355.4784846846374,
+      3543.8129031178901,
+      3520.631144962204,
+      3542.8254436842722,
+      3428.2304078086559,
+      3548.247616305056,
+      3539.7325420502202,
+      3486.083033612058,
+      3572.4524618117921,
+      3402.1895675466017,
+      3549.4013668365083,
+      3499.8806365710971,
+      3516.3848413188662,
+      3480.9385891449392,
+      3541.496726462588,
+      3556.5019328082258,
+      3399.603619807076,
+      3471.8044002066322,
+      3536.2794690495184,
+      3543.1734085327489,
+      3548.2162673320991,
+      3534.2008147152469,
+      3536.3031041784329,
+      3462.7348097759123,
+      3482.1931437485773,
+      3552.3516816826218,
+      3549.9100310844319,
+      3359.9760393496249,
+      3513.2608910581712,
+      3535.3664447975307,
+      3272.3456458249757,
+      3446.0136135455491,
+      3492.8549286392049,
+      3533.9687550603012,
+      3080.4918978781448,
+      3365.8760818371725,
+      3515.6763480923532,
+      3511.3686177243376,
+      3292.741079849357,
+      3535.4205655091109,
+      3541.0583054817357,
+      3460.9680673661451,
+      3506.240547174827,
+      3535.8670932681553,
+      3348.2715351883658,
+      3575.1825130668722,
+      3514.8081503474095,
+      3471.412587563032,
+      3486.5087973125815,
+      3549.6731319018872,
+      3544.071001344978,
+      3409.737364285766,
+      3541.9811724600331,
+      3545.865163079925,
+      3525.9839275708077,
+      3522.3391149512122,
+      3526.2720135899676,
+      3513.4409847079414,
+      3540.037416060281,
+      3538.4509666636618,
+      3557.8277582964402,
+      3544.0743926737982,
+      3384.09464013658,
+      3516.0102228718561,
+      3529.4618830617997,
+      3478.7613271911823,
+      3518.1963755209877,
+      3264.8903486565082,
+      3458.6908149661767,
+      3523.2753382339952,
+      3530.087838814994,
+      3511.8157499190102,
+      3547.9055773288833,
+      3331.797929778169,
+      3535.3150754138992
+    ]
+  },
+  "runtime": 37.902956837000033,
+  "system_uuid": "f9504e12573ae53191de605d96657d40330a77eb",
+  "timestamp": "2019-03-12 01:54:58 -0500",
+  "uuid": "581c0d182e174f3b9d2ce546d8b7a986",
+  "version": "Geekbench 4.3.1",
+  "metrics": [
+    {
+      "id": 1,
+      "name": "Platform",
+      "value": "Mac OS X x86 (64-bit)",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2,
+      "name": "Compiler",
+      "value": "Clang 8.0.0 (clang-800.0.42.1)",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 3,
+      "name": "Operating System",
+      "value": "macOS 10.14.3 (Build 18D109)",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 4,
+      "name": "Model ID",
+      "value": "MacBookPro14,1",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 5,
+      "name": "Model",
+      "value": "MacBookPro14,1",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 6,
+      "name": "Motherboard",
+      "value": "Apple Inc. Mac-B4831CEBD52A0C4C 1.0",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 7,
+      "name": "Processor ID",
+      "value": "GenuineIntel Family 6 Model 158 Stepping 9",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 8,
+      "name": "Processor Brand",
+      "value": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 9,
+      "name": "Processor",
+      "value": "Intel Core i7-7700HQ",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 12,
+      "name": "Threads",
+      "value": "8",
+      "ivalue": 8,
+      "fvalue": 8.0
+    },
+    {
+      "id": 13,
+      "name": "Cores",
+      "value": "4",
+      "ivalue": 4,
+      "fvalue": 4.0
+    },
+    {
+      "id": 14,
+      "name": "Processors",
+      "value": "1",
+      "ivalue": 1,
+      "fvalue": 1.0
+    },
+    {
+      "id": 15,
+      "name": "Processor Frequency",
+      "value": "2.81 GHz",
+      "ivalue": 2808000000,
+      "fvalue": 2808000000.0
+    },
+    {
+      "id": 17,
+      "name": "L1 Instruction Cache",
+      "value": "32.0 KB",
+      "ivalue": 32768,
+      "fvalue": 32768.0
+    },
+    {
+      "id": 18,
+      "name": "L1 Instruction Cache Count",
+      "value": "4",
+      "ivalue": 4,
+      "fvalue": 4.0
+    },
+    {
+      "id": 19,
+      "name": "L1 Data Cache",
+      "value": "32.0 KB",
+      "ivalue": 32768,
+      "fvalue": 32768.0
+    },
+    {
+      "id": 20,
+      "name": "L1 Data Cache Count",
+      "value": "4",
+      "ivalue": 4,
+      "fvalue": 4.0
+    },
+    {
+      "id": 21,
+      "name": "L2 Cache",
+      "value": "256 KB",
+      "ivalue": 262144,
+      "fvalue": 262144.0
+    },
+    {
+      "id": 22,
+      "name": "L2 Cache Count",
+      "value": "4",
+      "ivalue": 4,
+      "fvalue": 4.0
+    },
+    {
+      "id": 23,
+      "name": "L3 Cache",
+      "value": "6.00 MB",
+      "ivalue": 6291456,
+      "fvalue": 6291456.0
+    },
+    {
+      "id": 24,
+      "name": "L3 Cache Count",
+      "value": "1",
+      "ivalue": 1,
+      "fvalue": 1.0
+    },
+    {
+      "id": 25,
+      "name": "L4 Cache",
+      "value": "0.00 B",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 26,
+      "name": "L4 Cache Count",
+      "value": "1",
+      "ivalue": 1,
+      "fvalue": 1.0
+    },
+    {
+      "id": 27,
+      "name": "Bus Frequency",
+      "value": "100 MHz",
+      "ivalue": 100000000,
+      "fvalue": 100000000.0
+    },
+    {
+      "id": 29,
+      "name": "Memory",
+      "value": "16.0 GB",
+      "ivalue": 17179869184,
+      "fvalue": 17179869184.0
+    },
+    {
+      "id": 30,
+      "name": "Memory Type",
+      "value": "2400 MHz DDR4",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 31,
+      "name": "BIOS",
+      "value": "Apple Inc. 184.0.0.0.0",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 34,
+      "name": "GPU 1",
+      "value": "Intel HD Graphics 630",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 38,
+      "name": "Chassis Manufacturer",
+      "value": "Apple Inc.",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 39,
+      "name": "Chassis Type",
+      "value": "0x9",
+      "ivalue": 9,
+      "fvalue": 9.0
+    },
+    {
+      "id": 2000,
+      "name": "OpenCL Platform Vendor",
+      "value": "Apple",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2001,
+      "name": "OpenCL Platform Name",
+      "value": "Apple",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2002,
+      "name": "OpenCL Platform Version",
+      "value": "OpenCL 1.2 (Oct 31 2018 21:59:22)",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2003,
+      "name": "OpenCL Platform Extensions",
+      "value": "cl_APPLE_SetMemObjectDestructor cl_APPLE_ContextLoggingFunctions cl_APPLE_clut cl_APPLE_query_kernel_names cl_APPLE_gl_sharing cl_khr_gl_event",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2004,
+      "name": "OpenCL Device Vendor",
+      "value": "Intel Inc.",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2005,
+      "name": "OpenCL Device Name",
+      "value": "Intel(R) Iris(TM) Graphics 550",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2006,
+      "name": "OpenCL Device Version",
+      "value": "OpenCL 1.2",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2007,
+      "name": "OpenCL Device Global Mem Cache Size",
+      "value": "0.00 B",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2008,
+      "name": "OpenCL Device Global Mem Cache Type",
+      "value": "CL_NONE",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2009,
+      "name": "OpenCL Device Extensions",
+      "value": "cl_APPLE_SetMemObjectDestructor cl_APPLE_ContextLoggingFunctions cl_APPLE_clut cl_APPLE_query_kernel_names cl_APPLE_gl_sharing cl_khr_gl_event cl_khr_global_int32_base_atomics cl_khr_global_int32_extended_atomics cl_khr_local_int32_base_atomics cl_khr_local_int32_extended_atomics cl_khr_byte_addressable_store cl_khr_image2d_from_buffer cl_khr_gl_depth_images cl_khr_depth_images cl_khr_3d_image_writes",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2010,
+      "name": "OpenCL Device Global Mem Cacheline Size",
+      "value": "0.00 B",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2011,
+      "name": "OpenCL Device Global Mem Size",
+      "value": "1.50 GB",
+      "ivalue": 1610612736,
+      "fvalue": 1610612736.0
+    },
+    {
+      "id": 2013,
+      "name": "OpenCL Device Image Support",
+      "value": "True",
+      "ivalue": 1,
+      "fvalue": 1.0
+    },
+    {
+      "id": 2014,
+      "name": "OpenCL Device Image 2D Max Height",
+      "value": "16384",
+      "ivalue": 16384,
+      "fvalue": 16384.0
+    },
+    {
+      "id": 2015,
+      "name": "OpenCL Device Image 2D Max Width",
+      "value": "16384",
+      "ivalue": 16384,
+      "fvalue": 16384.0
+    },
+    {
+      "id": 2032,
+      "name": "OpenCL Device Preferred Vector Width (char)",
+      "value": "1",
+      "ivalue": 1,
+      "fvalue": 1.0
+    },
+    {
+      "id": 2033,
+      "name": "OpenCL Device Preferred Vector Width (short)",
+      "value": "1",
+      "ivalue": 1,
+      "fvalue": 1.0
+    },
+    {
+      "id": 2034,
+      "name": "OpenCL Device Preferred Vector Width (int)",
+      "value": "1",
+      "ivalue": 1,
+      "fvalue": 1.0
+    },
+    {
+      "id": 2035,
+      "name": "OpenCL Device Preferred Vector Width (long)",
+      "value": "1",
+      "ivalue": 1,
+      "fvalue": 1.0
+    },
+    {
+      "id": 2036,
+      "name": "OpenCL Device Preferred Vector Width (float)",
+      "value": "1",
+      "ivalue": 1,
+      "fvalue": 1.0
+    },
+    {
+      "id": 2037,
+      "name": "OpenCL Device Preferred Vector Width (double)",
+      "value": "0",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2038,
+      "name": "OpenCL Device Preferred Vector Width (half)",
+      "value": "0",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2040,
+      "name": "OpenCL Device Type",
+      "value": "CL_DEVICE_TYPE_GPU",
+      "ivalue": 4,
+      "fvalue": 4.0
+    },
+    {
+      "id": 2041,
+      "name": "OpenCL Driver Version",
+      "value": "1.2(Dec 20 2018 21:30:29)",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2017,
+      "name": "OpenCL Device Local Mem Size",
+      "value": "64.0 KB",
+      "ivalue": 65536,
+      "fvalue": 65536.0
+    },
+    {
+      "id": 2018,
+      "name": "OpenCL Device Local Mem Type",
+      "value": "CL_LOCAL",
+      "ivalue": 1,
+      "fvalue": 1.0
+    },
+    {
+      "id": 2019,
+      "name": "OpenCL Device Max Clock Frequency",
+      "value": "1.10 GHz",
+      "ivalue": 1100,
+      "fvalue": 1100.0
+    },
+    {
+      "id": 2020,
+      "name": "OpenCL Device Max Compute Units",
+      "value": "24",
+      "ivalue": 24,
+      "fvalue": 24.0
+    },
+    {
+      "id": 2021,
+      "name": "OpenCL Device Max Mem Alloc Size",
+      "value": "384 MB",
+      "ivalue": 402653184,
+      "fvalue": 402653184.0
+    },
+    {
+      "id": 2022,
+      "name": "OpenCL Device Max Samplers",
+      "value": "16",
+      "ivalue": 16,
+      "fvalue": 16.0
+    },
+    {
+      "id": 2023,
+      "name": "OpenCL Device Max Work Group Size",
+      "value": "256",
+      "ivalue": 256,
+      "fvalue": 256.0
+    },
+    {
+      "id": 2024,
+      "name": "OpenCL Device Max Work Item Dimensions",
+      "value": "3",
+      "ivalue": 3,
+      "fvalue": 3.0
+    },
+    {
+      "id": 2042,
+      "name": "OpenCL Supported Image Formats (Read Only)",
+      "value": "CL_RGBA CL_SNORM_INT8 <10b5:10d0> CL_RGBA CL_SNORM_INT16 <10b5:10d1> CL_RGBA CL_UNORM_INT8 <10b5:10d2> CL_RGBA CL_UNORM_INT16 <10b5:10d3> CL_RGBA CL_SIGNED_INT8 <10b5:10d7> CL_RGBA CL_SIGNED_INT16 <10b5:10d8> CL_RGBA CL_SIGNED_INT32 <10b5:10d9> CL_RGBA CL_UNSIGNED_INT8 <10b5:10da> CL_RGBA CL_UNSIGNED_INT16 <10b5:10db> CL_RGBA CL_UNSIGNED_INT32 <10b5:10dc> CL_RGBA CL_HALF_FLOAT <10b5:10dd> CL_RGBA CL_FLOAT <10b5:10de> CL_BGRA CL_SNORM_INT8 <10b6:10d0> CL_BGRA CL_SNORM_INT16 <10b6:10d1> CL_BGRA CL_UNORM_INT8 <10b6:10d2> CL_BGRA CL_UNORM_INT16 <10b6:10d3> CL_BGRA CL_HALF_FLOAT <10b6:10dd> CL_BGRA CL_FLOAT <10b6:10de> CL_ARGB CL_UNORM_INT8 <10b7:10d2>  CL_UNORM_INT8 <10000012:10d2> CL_R CL_SNORM_INT8 <10b0:10d0> CL_R CL_SNORM_INT16 <10b0:10d1> CL_R CL_UNORM_INT8 <10b0:10d2> CL_R CL_UNORM_INT16 <10b0:10d3> CL_R CL_SIGNED_INT8 <10b0:10d7> CL_R CL_SIGNED_INT16 <10b0:10d8> CL_R CL_SIGNED_INT32 <10b0:10d9> CL_R CL_UNSIGNED_INT8 <10b0:10da> CL_R CL_UNSIGNED_INT16 <10b0:10db> CL_R CL_UNSIGNED_INT32 <10b0:10dc> CL_R CL_HALF_FLOAT <10b0:10dd> CL_R CL_FLOAT <10b0:10de> CL_A CL_SNORM_INT8 <10b1:10d0> CL_A CL_SNORM_INT16 <10b1:10d1> CL_A CL_UNORM_INT8 <10b1:10d2> CL_A CL_UNORM_INT16 <10b1:10d3> CL_A CL_SIGNED_INT8 <10b1:10d7> CL_A CL_SIGNED_INT16 <10b1:10d8> CL_A CL_SIGNED_INT32 <10b1:10d9> CL_A CL_UNSIGNED_INT8 <10b1:10da> CL_A CL_UNSIGNED_INT16 <10b1:10db> CL_A CL_UNSIGNED_INT32 <10b1:10dc> CL_A CL_HALF_FLOAT <10b1:10dd> CL_A CL_FLOAT <10b1:10de> CL_RG CL_SNORM_INT8 <10b2:10d0> CL_RG CL_SNORM_INT16 <10b2:10d1> CL_RG CL_UNORM_INT8 <10b2:10d2> CL_RG CL_UNORM_INT16 <10b2:10d3> CL_RG CL_SIGNED_INT8 <10b2:10d7> CL_RG CL_SIGNED_INT16 <10b2:10d8> CL_RG CL_SIGNED_INT32 <10b2:10d9> CL_RG CL_UNSIGNED_INT8 <10b2:10da> CL_RG CL_UNSIGNED_INT16 <10b2:10db> CL_RG CL_UNSIGNED_INT32 <10b2:10dc> CL_RG CL_HALF_FLOAT <10b2:10dd> CL_RG CL_FLOAT <10b2:10de> CL_RA CL_SNORM_INT8 <10b3:10d0> CL_RA CL_SNORM_INT16 <10b3:10d1> CL_RA CL_UNORM_INT8 <10b3:10d2> CL_RA CL_UNORM_INT16 <10b3:10d3> CL_RA CL_SIGNED_INT8 <10b3:10d7> CL_RA CL_SIGNED_INT16 <10b3:10d8> CL_RA CL_SIGNED_INT32 <10b3:10d9> CL_RA CL_UNSIGNED_INT8 <10b3:10da> CL_RA CL_UNSIGNED_INT16 <10b3:10db> CL_RA CL_UNSIGNED_INT32 <10b3:10dc> CL_RA CL_HALF_FLOAT <10b3:10dd> CL_RA CL_FLOAT <10b3:10de> CL_RGB CL_SNORM_INT8 <10b4:10d0> CL_RGB CL_SNORM_INT16 <10b4:10d1> CL_RGB CL_UNORM_INT8 <10b4:10d2> CL_RGB CL_UNORM_INT16 <10b4:10d3> CL_RGB CL_HALF_FLOAT <10b4:10dd> CL_RGB CL_FLOAT <10b4:10de> CL_RGBx CL_UNORM_INT8 <10bc:10d2> CL_RGBx CL_UNORM_INT16 <10bc:10d3> CL_RGBx CL_HALF_FLOAT <10bc:10dd> CL_RGBx CL_FLOAT <10bc:10de> CL_INTENSITY CL_UNORM_INT8 <10b8:10d2> CL_INTENSITY CL_UNORM_INT16 <10b8:10d3> CL_INTENSITY CL_HALF_FLOAT <10b8:10dd> CL_INTENSITY CL_FLOAT <10b8:10de> CL_DEPTH CL_FLOAT <10bd:10de> CL_DEPTH CL_UNORM_INT16 <10bd:10d3>",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2043,
+      "name": "OpenCL Supported Image Formats (Write Only)",
+      "value": "CL_RGBA CL_SNORM_INT8 <10b5:10d0> CL_RGBA CL_SNORM_INT16 <10b5:10d1> CL_RGBA CL_UNORM_INT8 <10b5:10d2> CL_RGBA CL_UNORM_INT16 <10b5:10d3> CL_RGBA CL_SIGNED_INT8 <10b5:10d7> CL_RGBA CL_SIGNED_INT16 <10b5:10d8> CL_RGBA CL_SIGNED_INT32 <10b5:10d9> CL_RGBA CL_UNSIGNED_INT8 <10b5:10da> CL_RGBA CL_UNSIGNED_INT16 <10b5:10db> CL_RGBA CL_UNSIGNED_INT32 <10b5:10dc> CL_RGBA CL_HALF_FLOAT <10b5:10dd> CL_RGBA CL_FLOAT <10b5:10de> CL_BGRA CL_SNORM_INT8 <10b6:10d0> CL_BGRA CL_SNORM_INT16 <10b6:10d1> CL_BGRA CL_UNORM_INT8 <10b6:10d2> CL_BGRA CL_UNORM_INT16 <10b6:10d3> CL_BGRA CL_HALF_FLOAT <10b6:10dd> CL_BGRA CL_FLOAT <10b6:10de> CL_ARGB CL_UNORM_INT8 <10b7:10d2>  CL_UNORM_INT8 <10000012:10d2> CL_R CL_SNORM_INT8 <10b0:10d0> CL_R CL_SNORM_INT16 <10b0:10d1> CL_R CL_UNORM_INT8 <10b0:10d2> CL_R CL_UNORM_INT16 <10b0:10d3> CL_R CL_SIGNED_INT8 <10b0:10d7> CL_R CL_SIGNED_INT16 <10b0:10d8> CL_R CL_SIGNED_INT32 <10b0:10d9> CL_R CL_UNSIGNED_INT8 <10b0:10da> CL_R CL_UNSIGNED_INT16 <10b0:10db> CL_R CL_UNSIGNED_INT32 <10b0:10dc> CL_R CL_HALF_FLOAT <10b0:10dd> CL_R CL_FLOAT <10b0:10de> CL_A CL_SNORM_INT8 <10b1:10d0> CL_A CL_SNORM_INT16 <10b1:10d1> CL_A CL_UNORM_INT8 <10b1:10d2> CL_A CL_UNORM_INT16 <10b1:10d3> CL_A CL_SIGNED_INT8 <10b1:10d7> CL_A CL_SIGNED_INT16 <10b1:10d8> CL_A CL_SIGNED_INT32 <10b1:10d9> CL_A CL_UNSIGNED_INT8 <10b1:10da> CL_A CL_UNSIGNED_INT16 <10b1:10db> CL_A CL_UNSIGNED_INT32 <10b1:10dc> CL_A CL_HALF_FLOAT <10b1:10dd> CL_A CL_FLOAT <10b1:10de> CL_RG CL_SNORM_INT8 <10b2:10d0> CL_RG CL_SNORM_INT16 <10b2:10d1> CL_RG CL_UNORM_INT8 <10b2:10d2> CL_RG CL_UNORM_INT16 <10b2:10d3> CL_RG CL_SIGNED_INT8 <10b2:10d7> CL_RG CL_SIGNED_INT16 <10b2:10d8> CL_RG CL_SIGNED_INT32 <10b2:10d9> CL_RG CL_UNSIGNED_INT8 <10b2:10da> CL_RG CL_UNSIGNED_INT16 <10b2:10db> CL_RG CL_UNSIGNED_INT32 <10b2:10dc> CL_RG CL_HALF_FLOAT <10b2:10dd> CL_RG CL_FLOAT <10b2:10de> CL_RA CL_SNORM_INT8 <10b3:10d0> CL_RA CL_SNORM_INT16 <10b3:10d1> CL_RA CL_UNORM_INT8 <10b3:10d2> CL_RA CL_UNORM_INT16 <10b3:10d3> CL_RA CL_SIGNED_INT8 <10b3:10d7> CL_RA CL_SIGNED_INT16 <10b3:10d8> CL_RA CL_SIGNED_INT32 <10b3:10d9> CL_RA CL_UNSIGNED_INT8 <10b3:10da> CL_RA CL_UNSIGNED_INT16 <10b3:10db> CL_RA CL_UNSIGNED_INT32 <10b3:10dc> CL_RA CL_HALF_FLOAT <10b3:10dd> CL_RA CL_FLOAT <10b3:10de> CL_RGB CL_SNORM_INT8 <10b4:10d0> CL_RGB CL_SNORM_INT16 <10b4:10d1> CL_RGB CL_UNORM_INT8 <10b4:10d2> CL_RGB CL_UNORM_INT16 <10b4:10d3> CL_RGB CL_HALF_FLOAT <10b4:10dd> CL_RGB CL_FLOAT <10b4:10de> CL_RGBx CL_UNORM_INT8 <10bc:10d2> CL_RGBx CL_UNORM_INT16 <10bc:10d3> CL_RGBx CL_HALF_FLOAT <10bc:10dd> CL_RGBx CL_FLOAT <10bc:10de> CL_INTENSITY CL_UNORM_INT8 <10b8:10d2> CL_INTENSITY CL_UNORM_INT16 <10b8:10d3> CL_INTENSITY CL_HALF_FLOAT <10b8:10dd> CL_INTENSITY CL_FLOAT <10b8:10de> CL_DEPTH CL_FLOAT <10bd:10de> CL_DEPTH CL_UNORM_INT16 <10bd:10d3>",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2044,
+      "name": "OpenCL Supported Image Formats (Read Write)",
+      "value": "CL_RGBA CL_SNORM_INT8 <10b5:10d0> CL_RGBA CL_SNORM_INT16 <10b5:10d1> CL_RGBA CL_UNORM_INT8 <10b5:10d2> CL_RGBA CL_UNORM_INT16 <10b5:10d3> CL_RGBA CL_SIGNED_INT8 <10b5:10d7> CL_RGBA CL_SIGNED_INT16 <10b5:10d8> CL_RGBA CL_SIGNED_INT32 <10b5:10d9> CL_RGBA CL_UNSIGNED_INT8 <10b5:10da> CL_RGBA CL_UNSIGNED_INT16 <10b5:10db> CL_RGBA CL_UNSIGNED_INT32 <10b5:10dc> CL_RGBA CL_HALF_FLOAT <10b5:10dd> CL_RGBA CL_FLOAT <10b5:10de> CL_BGRA CL_SNORM_INT8 <10b6:10d0> CL_BGRA CL_SNORM_INT16 <10b6:10d1> CL_BGRA CL_UNORM_INT8 <10b6:10d2> CL_BGRA CL_UNORM_INT16 <10b6:10d3> CL_BGRA CL_HALF_FLOAT <10b6:10dd> CL_BGRA CL_FLOAT <10b6:10de> CL_ARGB CL_UNORM_INT8 <10b7:10d2>  CL_UNORM_INT8 <10000012:10d2> CL_R CL_SNORM_INT8 <10b0:10d0> CL_R CL_SNORM_INT16 <10b0:10d1> CL_R CL_UNORM_INT8 <10b0:10d2> CL_R CL_UNORM_INT16 <10b0:10d3> CL_R CL_SIGNED_INT8 <10b0:10d7> CL_R CL_SIGNED_INT16 <10b0:10d8> CL_R CL_SIGNED_INT32 <10b0:10d9> CL_R CL_UNSIGNED_INT8 <10b0:10da> CL_R CL_UNSIGNED_INT16 <10b0:10db> CL_R CL_UNSIGNED_INT32 <10b0:10dc> CL_R CL_HALF_FLOAT <10b0:10dd> CL_R CL_FLOAT <10b0:10de> CL_A CL_SNORM_INT8 <10b1:10d0> CL_A CL_SNORM_INT16 <10b1:10d1> CL_A CL_UNORM_INT8 <10b1:10d2> CL_A CL_UNORM_INT16 <10b1:10d3> CL_A CL_SIGNED_INT8 <10b1:10d7> CL_A CL_SIGNED_INT16 <10b1:10d8> CL_A CL_SIGNED_INT32 <10b1:10d9> CL_A CL_UNSIGNED_INT8 <10b1:10da> CL_A CL_UNSIGNED_INT16 <10b1:10db> CL_A CL_UNSIGNED_INT32 <10b1:10dc> CL_A CL_HALF_FLOAT <10b1:10dd> CL_A CL_FLOAT <10b1:10de> CL_RG CL_SNORM_INT8 <10b2:10d0> CL_RG CL_SNORM_INT16 <10b2:10d1> CL_RG CL_UNORM_INT8 <10b2:10d2> CL_RG CL_UNORM_INT16 <10b2:10d3> CL_RG CL_SIGNED_INT8 <10b2:10d7> CL_RG CL_SIGNED_INT16 <10b2:10d8> CL_RG CL_SIGNED_INT32 <10b2:10d9> CL_RG CL_UNSIGNED_INT8 <10b2:10da> CL_RG CL_UNSIGNED_INT16 <10b2:10db> CL_RG CL_UNSIGNED_INT32 <10b2:10dc> CL_RG CL_HALF_FLOAT <10b2:10dd> CL_RG CL_FLOAT <10b2:10de> CL_RA CL_SNORM_INT8 <10b3:10d0> CL_RA CL_SNORM_INT16 <10b3:10d1> CL_RA CL_UNORM_INT8 <10b3:10d2> CL_RA CL_UNORM_INT16 <10b3:10d3> CL_RA CL_SIGNED_INT8 <10b3:10d7> CL_RA CL_SIGNED_INT16 <10b3:10d8> CL_RA CL_SIGNED_INT32 <10b3:10d9> CL_RA CL_UNSIGNED_INT8 <10b3:10da> CL_RA CL_UNSIGNED_INT16 <10b3:10db> CL_RA CL_UNSIGNED_INT32 <10b3:10dc> CL_RA CL_HALF_FLOAT <10b3:10dd> CL_RA CL_FLOAT <10b3:10de> CL_RGB CL_SNORM_INT8 <10b4:10d0> CL_RGB CL_SNORM_INT16 <10b4:10d1> CL_RGB CL_UNORM_INT8 <10b4:10d2> CL_RGB CL_UNORM_INT16 <10b4:10d3> CL_RGB CL_HALF_FLOAT <10b4:10dd> CL_RGB CL_FLOAT <10b4:10de> CL_RGBx CL_UNORM_INT8 <10bc:10d2> CL_RGBx CL_UNORM_INT16 <10bc:10d3> CL_RGBx CL_HALF_FLOAT <10bc:10dd> CL_RGBx CL_FLOAT <10bc:10de> CL_INTENSITY CL_UNORM_INT8 <10b8:10d2> CL_INTENSITY CL_UNORM_INT16 <10b8:10d3> CL_INTENSITY CL_HALF_FLOAT <10b8:10dd> CL_INTENSITY CL_FLOAT <10b8:10de> CL_DEPTH CL_FLOAT <10bd:10de> CL_DEPTH CL_UNORM_INT16 <10bd:10d3>",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2012,
+      "name": "OpenCL Device Host Unified Memory",
+      "value": "True",
+      "ivalue": 1,
+      "fvalue": 1.0
+    },
+    {
+      "id": 2025,
+      "name": "OpenCL Device Native Vector Width (char)",
+      "value": "1",
+      "ivalue": 1,
+      "fvalue": 1.0
+    },
+    {
+      "id": 2026,
+      "name": "OpenCL Device Native Vector Width (short)",
+      "value": "1",
+      "ivalue": 1,
+      "fvalue": 1.0
+    },
+    {
+      "id": 2027,
+      "name": "OpenCL Device Native Vector Width (int)",
+      "value": "1",
+      "ivalue": 1,
+      "fvalue": 1.0
+    },
+    {
+      "id": 2028,
+      "name": "OpenCL Device Native Vector Width (long)",
+      "value": "1",
+      "ivalue": 1,
+      "fvalue": 1.0
+    },
+    {
+      "id": 2029,
+      "name": "OpenCL Device Native Vector Width (float)",
+      "value": "1",
+      "ivalue": 1,
+      "fvalue": 1.0
+    },
+    {
+      "id": 2030,
+      "name": "OpenCL Device Native Vector Width (double)",
+      "value": "0",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2031,
+      "name": "OpenCL Device Native Vector Width (half)",
+      "value": "0",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 2016,
+      "name": "OpenCL Device Image Max Buffer Size",
+      "value": "24.0 MB",
+      "ivalue": 25165824,
+      "fvalue": 25165824.0
+    },
+    {
+      "id": 1000,
+      "name": "Compute Device",
+      "value": "Intel(R) Iris(TM) Graphics 550",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 10,
+      "name": "Processor Codename",
+      "value": "",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 11,
+      "name": "Processor Package",
+      "value": "",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 16,
+      "name": "Stock Processor Frequency",
+      "value": "",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 28,
+      "name": "Stock Bus Frequency",
+      "value": "",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 32,
+      "name": "Northbridge",
+      "value": "",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 33,
+      "name": "Southbridge",
+      "value": "",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 66,
+      "name": "Processor Minimum Multiplier",
+      "value": "",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 67,
+      "name": "Processor Maximum Multiplier",
+      "value": "",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 68,
+      "name": "Processor Minimum Frequency",
+      "value": "",
+      "ivalue": 0,
+      "fvalue": 0.0
+    },
+    {
+      "id": 69,
+      "name": "Processor Maximum Frequency",
+      "value": "",
+      "ivalue": 0,
+      "fvalue": 0.0
+    }
+  ],
+  "multicore_rate": 0.0,
+  "multicore_score": 0,
+  "score": 22379,
+  "valid": 1,
+  "sections": [
+    {
+      "name": "OpenCL",
+      "id": 4,
+      "score": 22379,
+      "graph_width": 25,
+      "valid": 1,
+      "workloads": [
+        {
+          "name": "Sobel",
+          "id": 203,
+          "units": 9,
+          "threads": 1,
+          "score": 27638,
+          "graph_width": 30,
+          "factory_runtime": 0.68786624699998811,
+          "runtime": 0.0081918289999975968,
+          "runtime_max": 0.016159795000021404,
+          "runtime_mean": 0.012517441052642951,
+          "runtime_median": 0.013235315000088121,
+          "runtime_min": 0.0081918289999975968,
+          "runtime_stddev": 0.0026860459849777849,
+          "runtime_warmup": 0.0082845870000483046,
+          "runtimes": [
+            0.0083889210000052117,
+            0.0085076899999876332,
+            0.0081918289999975968,
+            0.0092370009999740432,
+            0.010228540000071007,
+            0.010478013000010833,
+            0.011360997999986466,
+            0.011700442000005751,
+            0.012758074000089437,
+            0.013235315000088121,
+            0.014224472000023525,
+            0.015360505999979068,
+            0.015383011000039915,
+            0.015434497000001102,
+            0.016159795000021404,
+            0.015165610999929413,
+            0.014374929000041448,
+            0.013346301999945354,
+            0.014295434000018759
+          ],
+          "valid": 1,
+          "workload_rate": 1217587915.9590521,
+          "work": 9974272,
+          "rate_string": "1.22 Gpixels/sec"
+        },
+        {
+          "name": "Histogram Equalization",
+          "id": 210,
+          "units": 9,
+          "threads": 1,
+          "score": 23839,
+          "graph_width": 26,
+          "factory_runtime": 0.35259671599999365,
+          "runtime": 0.013390609999987646,
+          "runtime_max": 0.019833941999991112,
+          "runtime_mean": 0.017625992631565168,
+          "runtime_median": 0.017971758000044247,
+          "runtime_min": 0.013390609999987646,
+          "runtime_stddev": 0.0015881813493962144,
+          "runtime_warmup": 0.011321986999973888,
+          "runtimes": [
+            0.013390609999987646,
+            0.014330628000038814,
+            0.015765205999969112,
+            0.01687598999990314,
+            0.017856857999959175,
+            0.017935911999984455,
+            0.017935639000029369,
+            0.019833941999991112,
+            0.017969571999969958,
+            0.017877578000025096,
+            0.018022594999933972,
+            0.017971758000044247,
+            0.019215500999962387,
+            0.018378111999936664,
+            0.019432154000014634,
+            0.018100444999959109,
+            0.018005721000008634,
+            0.01800580099995841,
+            0.017989838000062264
+          ],
+          "valid": 1,
+          "workload_rate": 744870622.0261215,
+          "work": 9974272,
+          "rate_string": "744.9 Mpixels/sec"
+        },
+        {
+          "name": "SFFT",
+          "id": 302,
+          "units": 1,
+          "threads": 1,
+          "score": 3388,
+          "graph_width": 3,
+          "factory_runtime": 0.49774671799991665,
+          "runtime": 0.059577737000040543,
+          "runtime_max": 0.060915578000049209,
+          "runtime_mean": 0.060134205000006082,
+          "runtime_median": 0.060051648000012392,
+          "runtime_min": 0.059577737000040543,
+          "runtime_stddev": 0.00045740628890506637,
+          "runtime_warmup": 0.060208171999988735,
+          "runtimes": [
+            0.059669823000035649,
+            0.060792528000092716,
+            0.060915578000049209,
+            0.060254230999930769,
+            0.059827503000065008,
+            0.059906578999971316,
+            0.059651851000012357,
+            0.060051648000012392,
+            0.059722536000094806,
+            0.059577737000040543,
+            0.060262693000026957,
+            0.060380039999927249,
+            0.059691481999948337,
+            0.060633219000010286,
+            0.059890288000019609,
+            0.060851611999964916,
+            0.060654059999933452,
+            0.059626291999961722,
+            0.060190195000018321
+          ],
+          "valid": 1,
+          "workload_rate": 8448063074.2932968,
+          "work": 503316480,
+          "rate_string": "8.45 Gflops"
+        },
+        {
+          "name": "Gaussian Blur",
+          "id": 307,
+          "units": 9,
+          "threads": 1,
+          "score": 29374,
+          "graph_width": 32,
+          "factory_runtime": 0.25168777400006093,
+          "runtime": 0.019383082999979706,
+          "runtime_max": 0.019810405000043829,
+          "runtime_mean": 0.019647967789464212,
+          "runtime_median": 0.019670749999932013,
+          "runtime_min": 0.019383082999979706,
+          "runtime_stddev": 9.9502864372123692e-05,
+          "runtime_warmup": 0.019501134000051934,
+          "runtimes": [
+            0.019704030999946553,
+            0.019713878000061413,
+            0.019383082999979706,
+            0.019661006999967867,
+            0.019513802000005853,
+            0.019585645999995904,
+            0.019686060000026373,
+            0.019600534000005609,
+            0.019670749999932013,
+            0.019810405000043829,
+            0.019655142999909003,
+            0.019597148999991987,
+            0.019629457999940314,
+            0.019731403000037062,
+            0.019688969999947403,
+            0.019739365000077669,
+            0.019697029999974802,
+            0.019731740999986869,
+            0.019511932999989767
+          ],
+          "valid": 1,
+          "workload_rate": 514586456.65451896,
+          "work": 9974272,
+          "rate_string": "514.6 Mpixels/sec"
+        },
+        {
+          "name": "Face Detection",
+          "id": 309,
+          "units": 18,
+          "threads": 1,
+          "score": 13903,
+          "graph_width": 15,
+          "factory_runtime": 0.22565894399997433,
+          "runtime": 0.018322392000072796,
+          "runtime_max": 0.031133367999927941,
+          "runtime_mean": 0.020394599473655416,
+          "runtime_median": 0.018661872999928164,
+          "runtime_min": 0.018322392000072796,
+          "runtime_stddev": 0.0034916620857438825,
+          "runtime_warmup": 0.033084200999951463,
+          "runtimes": [
+            0.031133367999927941,
+            0.027655397999978959,
+            0.022643004999963523,
+            0.018373005999933412,
+            0.018552463999981228,
+            0.018721761999927367,
+            0.018610497999929976,
+            0.018810940999969716,
+            0.019057189999898583,
+            0.021008689000041159,
+            0.021726692000015646,
+            0.021630736000020079,
+            0.018661872999928164,
+            0.018511474000092676,
+            0.018605883999953221,
+            0.018487314999902082,
+            0.018483156999991479,
+            0.018501545999924929,
+            0.018322392000072796
+          ],
+          "valid": 1,
+          "workload_rate": 4060878.0774750579,
+          "work": 74405,
+          "rate_string": "4.06 Msubwindows/sec"
+        },
+        {
+          "name": "RAW",
+          "id": 310,
+          "units": 9,
+          "threads": 1,
+          "score": 89438,
+          "graph_width": 100,
+          "factory_runtime": 0.27360098200006178,
+          "runtime": 0.018480784000075801,
+          "runtime_max": 0.018952821999960179,
+          "runtime_mean": 0.018686032421059234,
+          "runtime_median": 0.018676600999924631,
+          "runtime_min": 0.018480784000075801,
+          "runtime_stddev": 0.0001124234992340487,
+          "runtime_warmup": 0.0185975749999443,
+          "runtimes": [
+            0.018775834000052782,
+            0.018601540999952704,
+            0.018691055999966011,
+            0.018668133000005582,
+            0.018676600999924631,
+            0.018480784000075801,
+            0.018675210999958836,
+            0.018611312999951224,
+            0.018706195000049775,
+            0.018749836000097275,
+            0.018592465000097036,
+            0.018579348999992362,
+            0.018687496000097781,
+            0.018952821999960179,
+            0.018547582999985934,
+            0.018695614999955978,
+            0.018659927000044263,
+            0.018839331999970454,
+            0.018843522999986817
+          ],
+          "valid": 1,
+          "workload_rate": 865771062.52280068,
+          "work": 16000128,
+          "rate_string": "865.8 Mpixels/sec"
+        },
+        {
+          "name": "Depth of Field",
+          "id": 311,
+          "units": 9,
+          "threads": 1,
+          "score": 35115,
+          "graph_width": 39,
+          "factory_runtime": 0.19339312199997494,
+          "runtime": 0.023127531999989515,
+          "runtime_max": 0.023476981000044361,
+          "runtime_mean": 0.023278650947352281,
+          "runtime_median": 0.023280974000044807,
+          "runtime_min": 0.023127531999989515,
+          "runtime_stddev": 0.00010569247478479072,
+          "runtime_warmup": 0.023375469000029625,
+          "runtimes": [
+            0.023127531999989515,
+            0.02342609499999071,
+            0.023234800999944127,
+            0.023261576999971112,
+            0.023250129999951241,
+            0.023284624999973857,
+            0.023425415000019711,
+            0.023192928999947071,
+            0.023327474999973674,
+            0.023149238999963018,
+            0.023280974000044807,
+            0.023476981000044361,
+            0.023309933999939858,
+            0.02315448000001652,
+            0.023361146999945959,
+            0.023171316999992086,
+            0.023150063000002774,
+            0.023314745999982733,
+            0.023394908000000214
+          ],
+          "valid": 1,
+          "workload_rate": 102012441.27566528,
+          "work": 2359296,
+          "rate_string": "102.0 Mpixels/sec"
+        },
+        {
+          "name": "Particle Physics",
+          "id": 312,
+          "units": 12,
+          "threads": 1,
+          "score": 21977,
+          "graph_width": 24,
+          "factory_runtime": 0.15046953199998825,
+          "runtime": 0.057564688999946156,
+          "runtime_max": 0.064144633000069007,
+          "runtime_mean": 0.05941002100001027,
+          "runtime_median": 0.05942748000006759,
+          "runtime_min": 0.057564688999946156,
+          "runtime_stddev": 0.0014785856640921035,
+          "runtime_warmup": 0.058246350999979768,
+          "runtimes": [
+            0.05852917200002139,
+            0.058367251000049691,
+            0.064144633000069007,
+            0.059835567999925843,
+            0.05942748000006759,
+            0.060276861000033932,
+            0.05817750000005617,
+            0.059197841000013796,
+            0.057630743000004259,
+            0.057871054999964144,
+            0.057564688999946156,
+            0.058816504000105851,
+            0.060313155000017105,
+            0.058638770000015938,
+            0.060017633000029491,
+            0.060035564000031627,
+            0.059803526999985479,
+            0.059867310999948131,
+            0.060275141999909465
+          ],
+          "valid": 1,
+          "workload_rate": 3474.3521327838162,
+          "work": 200,
+          "rate_string": "3474.4 FPS"
+        }
+      ]
+    }
+  ],
+  "compute_api": 3,
+  "compute_platform_id": -1,
+  "compute_device_id": 0,
+  "compute_platform_name": "Apple Apple",
+  "compute_device_name": "Intel(R) Iris(TM) Graphics 550"
+}

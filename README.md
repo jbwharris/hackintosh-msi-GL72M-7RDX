@@ -1,6 +1,6 @@
 #  MSI GL72M 7RDX Hackintosh Laptop
 
-This is a Clover install for MacOS Mojave 10.14.2. This build is nearly perfect.
+This is a Clover install for MacOS Mojave 10.14.5. This build is now a triple boot, Mojave, Windows 10 and Ubuntu build.
 
 ### MSI GL72M 7RDX Laptop Specs
 - Core i7 7700HQ
@@ -29,6 +29,7 @@ This is a Clover install for MacOS Mojave 10.14.2. This build is nearly perfect.
 - [x] Bluetooth 
 - [x] HDMI
 - [x] Mini Display Port
+- [x] Ethernet through USB C
 
 ### Non-Functioning Components
 
@@ -85,13 +86,16 @@ I used Hackintool 1.8.2 to fix my USB ports, along with a few other issues. It g
 ### Display Port
 Thanks to @effeci I was able to get the display port working. I needed to spoof my [Kaby Lake to Skylake](https://www.tonymacx86.com/threads/readme-common-problems-and-workarounds-on-10-14-mojave.255823/) and it started working properly.
 
+### Added sound on startup
+I discovered Clover will make a sound on bootup. I opted to find the old Mac bong sound that used to be there when you'd boot a Mac. Now your Hackintosh can sound more like a Mac than a real Mac does these days.
+
 ## Outstanding Issues
 
 ### SD Card Reader
 I have a feeling this might actually work, just haven't tried yet.
 
-### Ethernet connection through USB C
-This was working at one point, then stopped working. Still have to figure it out.
+### HDMI Audio 
+Still haven't had the time to really test this one, just know it doesn't work currently.
 
 ## Useful Resource Links
 - Successful GL72M 7RDX Sierra build - https://www.tonymacx86.com/threads/msi-gl72m-7rdx-sierra-10-12-6-succes.236359/
@@ -103,7 +107,7 @@ This was working at one point, then stopped working. Still have to figure it out
 ### Keyboard Usage Notes
 - The brightness controls seem to be similar to where they'd appear on a Mac keyboard, using the scroll lock and pause break button. Using the function + up/down doesn't seem to do anything
 - Function is mapped to the Option key
-- Windows key is mapped to Function
+- Windows key is mapped to Function, this setting is changed in the BIOS
 - Function + F12 puts the laptop to sleep
 - Keyboard brightness is function + plus/minus keys on the num pad
 
@@ -120,3 +124,12 @@ This was working at one point, then stopped working. Still have to figure it out
 - SS03 USB3 <-- Top left USB3 port
 - SS05 TypeC+Sw <-- Orientation 1
 - SS06 TypeC+Sw <-- Orientation 2
+
+### Installing Windows 10 and Ubuntu
+I finally got around to installing Windows 10 and Ubuntu on my machine, but not without some bumps along the way. I found I struggled with getting Clover to show up after installing these OSs, so I thought I'd give a quick process rundown. I'm not going to get into details of the installs, just the process for swapping drives etc. You'll want to have prepared an Windows 10 installer USB, an Ubuntu installer USB and have a functioning Clover USB on hand.
+- Disassemble the bottom and pull out the m2 SSD drive. You'll want to install on the secondary SSHD drive. I already had this partitioned, so I just installed Windows 10 on a new NTFS partition. Put the bottom back on without putting all the screws back in. This laptop isn't the easiest to pull things in and out, so waiting until the end for all the screws saves a lot of headache.
+- Create a Windows 10 USB installer and boot with it. Install Windows on the NTFS drive and do any subsequent restarts until Windows is setup, I think it took me 3.
+- Create an Ubuntu 19.04 USB installer and boot with it. Create an ext4 partition and set the mount point to /. 1 restart and Ubuntu should be good to go. You may need a Clover USB to act as bootloader at this point, as it will have installed Grub on the drive.
+- Next you'll want to pull the SSHD that you just installed Windows and Ubuntu onto and reinsert the m2 SSD. At this point I found my drive didn't seem to to recognize the Clover EFI setting, so I used my Clover USB to boot up macOS. Mount the EFI partition(however you're used to doing that), then open the /EFI folder. Add underscores to the front of Microsoft and ubuntu folders, which will disable them. Save and restart.
+- on restart hit delete and enter the BIOS settings. Under Boot, Hard Drive boot priority(should be the last item on that page) choose UEFI OS (USUALLY NAME OF DRIVE MODEL HERE), and not Ubuntu or Windows Boot Manager. Save and restart. This should now get you booting into Clover off the m2 drive as expected. Shutdown after verifying Clover loaded.
+- Now you'll want to reinstall the SSHD drive. Pop it back in and verify you can boot into Windows 10 and Ubuntu. Once you've done that, you're good to reinsert all 16 screws on the back.
