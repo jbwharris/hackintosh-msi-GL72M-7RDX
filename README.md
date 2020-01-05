@@ -10,6 +10,7 @@ This is a Clover install for MacOS Mojave 10.14.5. This build is now a triple bo
 - Realtek ALC898
 - 17.3" HD display 1920x1080
 - 16gb 2400mhz DDR4
+- 250GB WD Blue 3D NAND 250GB PC SSD
 - 1TB Seagate FireCuda ST1000LX015
 - Broadcom DW1820A BCM94350ZAE 2.4G/5G Dual Band 867Mbps M.2 NGFF WiFi Card with Bluetooth 4.1
 
@@ -48,7 +49,10 @@ Swapped out the stock drive for a Seagate FireCuda ST1000LX015 - hybrid hard dri
 Hub works and allows me to plugin additional USB items and read SD cards, but HDMI passthrough do not work currently. The ethernet connection does work, so I can just plugin the hub and be connected to a wired connection automatically.
 
 ### WD Blue 3D NAND 250GB PC SSD - SATA III 6 Gb/s M.2 2280 Solid State Drive
-New drive is in the mail. Looking forward to getting this going as my boot drive. 
+Main boot drive for this machine.
+
+### Seagate FireCuda ST1000LX015
+Windows and Ubuntu run off this drive, as well as a clone of the main SSD.
 
 ## Installation Notes
 
@@ -71,6 +75,8 @@ I used Hackintool 1.8.2 to fix my USB ports, along with a few other issues. It g
 
 ### Screen Brightness / Sleep Wake
 - Screen brightness now works. I found [@goldenegg's MSI build](https://www.tonymacx86.com/threads/guide-msi-gf62vr-7rf-high-sierra-10-13-2.241725/) that was quite similar to mine and was able to get screen brightness working. This is huge as I'm not sure I've seen any other builds of similar gen MSI laptops running HD 630s that have this working.
+
+**January 4, 2020 Update** For a spell only the brightness down was working, but recent kext updates seemed to have fixed that.
 
 ### Sleep Working
 - I followed [this post](https://www.tonymacx86.com/threads/guide-msi-gf62vr-7rf-high-sierra-10-13-2.241725/) and was able to adapt the approach from a similar MSI laptop to get it working for my laptop
@@ -122,7 +128,7 @@ Still haven't had the time to really test this one, just know it doesn't work cu
 - HS08 USB2 <-- Right USB
 - HS10 Internal <-- BCM2045A0 Bluetooth USB Port
 - HS12 Internal <-- USB2.0-CRW SD Card Reader
-- SS02 USB3 <-- Bottom left USB3 port
+- SS02 USB3 <-- Bottom left USB3 port*******--
 - SS03 USB3 <-- Top left USB3 port
 - SS05 TypeC+Sw <-- Orientation 1
 - SS06 TypeC+Sw <-- Orientation 2
