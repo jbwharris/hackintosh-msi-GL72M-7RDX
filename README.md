@@ -55,6 +55,8 @@ New drive is in the mail. Looking forward to getting this going as my boot drive
 ### Fixing Bluetooth on BCM94350ZAE
 Installed latest BrcmFirmwareRepo.kext and BrcmNonPatchRAM2.kext from https://bitbucket.org/RehabMan/os-x-brcmpatchram/downloads/ using Kext Utility to Library/Extensions. Had to make sure SIP was disabled first or this work. Found out why it wasn't working was because my USB ports were messed up. I used Hackintool 1.8.2 to figure out which ports were which and this got Bluetooth to show up in my system preferences. In fixing my HDMI by implementing RehabMan's [config_HD615_620_630_640_650.plist](https://github.com/RehabMan/OS-X-Clover-Laptop-Config/blob/master/config_HD615_620_630_640_650.plist) it seemed to fix my Bluetooth issues too.
 
+**January 4, 2020 Update** It seems like a lingering issue with Bluetooth seems to have been fixed with the latest kext updates. I'd had issues with devices sustaining connections, but it seems to be working really well now.
+
 ### HDMI video out
 It took me awhile to get this working, but using RehabMan's [config_HD615_620_630_640_650.plist](https://github.com/RehabMan/OS-X-Clover-Laptop-Config/blob/master/config_HD615_620_630_640_650.plist) I was able to get HDMI out working properly. 
 
