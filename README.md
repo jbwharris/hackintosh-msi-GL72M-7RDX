@@ -142,3 +142,11 @@ I finally got around to installing Windows 10 and Ubuntu on my machine, but not 
 - on restart hit delete and enter the BIOS settings. Under Boot, Hard Drive boot priority(should be the last item on that page) choose UEFI OS (USUALLY NAME OF DRIVE MODEL HERE), and not Ubuntu or Windows Boot Manager. Save and restart. This should now get you booting into Clover off the m2 drive as expected. Shutdown after verifying Clover loaded.
 - Go back into your EFI folder and remove the underscores from the Windows and Ubuntu folders
 - Now you'll want to reinstall the SSHD drive. Pop it back in and verify you can boot into Windows 10 and Ubuntu. Once you've done that, you're good to reinsert all 16 screws on the back.
+
+### Fixing The Boot Entries in Windows
+I run into this problem every so often where my BIOS loses the boot entry for Clover and will only boot into Windows. To fix this I've figured out a process invloving a couple tools, [MiniTool Partition Wizard Free](https://www.partitionwizard.com/free-partition-manager.html) and [BootIce](https://www.softpedia.com/get/System/Boot-Manager-Disk/Bootice.shtml).
+- Once you've downloaded and installed Partition Wizard, go into Partition Management and right click the relevant EFI drive( it'll be the 200 MB partition listed first on your drive). From the menu, choose Change Letter and assign the EFI to an unused drive letter. 
+- Then open BootIce and go to the UEFI tab and click the Edit boot entries button.
+- Click add and open the EFI drive you just mapped and navigate to \EFI\CLOVER\CLOVERX64.efi and click open
+- Rename your entry and click Save current boot entry.
+- Then move the new boot entry to the top of the list and click close. 
