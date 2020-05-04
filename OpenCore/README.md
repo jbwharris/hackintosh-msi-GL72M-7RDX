@@ -74,7 +74,7 @@ I have a feeling this might actually work, just haven't tried yet.
 Still haven't had the time to really test this one, just know it doesn't work currently.
 
 ## Useful Resource Links
-- [Vanilla Laptop Guide](https://laptop.dortania.ml/)
+- [Vanilla Laptop Guide](https://dortania.github.io/oc-laptop-guide/)
 - [MSI GP62 Hackintosh by Chuxubank](https://github.com/chuxubank/MSI-GP62-Hackintosh)
 
 ### Keyboard Usage Notes
