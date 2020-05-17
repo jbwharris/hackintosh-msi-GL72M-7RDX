@@ -1,6 +1,6 @@
 #  MSI GL72M 7RDX Hackintosh Laptop
 
-I have functioning builds for both Clover and OpenCore. The OpenCore build still has a screen flicker problem that I haven't been able to reconcile, so I've gone back to using Clover as my daily platform.
+Functioning builds for both OpenCore and Clover. 
 
 ### [Clover Build](https://github.com/jbwharris/hackintosh-msi-GL72M-7RDX/tree/master/Clover)
 
