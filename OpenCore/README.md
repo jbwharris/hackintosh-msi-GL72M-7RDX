@@ -16,21 +16,20 @@ This is an OpenCore install for MacOS Mojave 10.15.3. This build is now a triple
 
 ### Functioning Components 
 
-- [x] Intel HD 630 1536mb working
-- [x] Wifi  
-- [x] USB C/3.0 
-- [x] Ethernet port
-- [x] Audio 
-- [x] Microphone
-- [x] iMessage/Facetime
-- [x] Sleep/Wake functionality
-- [x] Keyboard brightness 
-- [x] Screen brightness adjustment
-- [x] Webcam
-- [x] Bluetooth 
-- [x] HDMI
-- [x] Mini Display Port
-- [x] Ethernet through USB C
+- :white_check_mark: Intel HD 630 1536mb working
+- :white_check_mark: Wifi  
+- :white_check_mark: USB C/3.0 
+- :white_check_mark: Ethernet port
+- :white_check_mark: Audio 
+- :white_check_mark: Microphone
+- :white_check_mark: iMessage/Facetime
+- :white_check_mark: Sleep/Wake functionality
+- :white_check_mark: Keyboard brightness 
+- :white_check_mark: Screen brightness adjustment
+- :white_check_mark: Webcam
+- :white_check_mark: HDMI
+- :white_check_mark: Mini Display Port
+- :white_check_mark: Ethernet through USB C
 
 ### Non-Functioning Components
 
