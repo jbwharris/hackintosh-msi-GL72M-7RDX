@@ -159,32 +159,27 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>AAAbWQ==</data>
+				<data>BQAcWQ==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
+			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Internal@0,2,0</string>
-				<key>device-id</key>
-				<data>G1kAAA==</data>
+				<string>WLAN</string>
+				<key>compatible</key>
+				<string>pci14e4,4331</string>
 				<key>device_type</key>
-				<string>VGA compatible controller</string>
-				<key>framebuffer-con0-alldata</key>
-				<data>AAASAAIAAACYAAAAAgQSAAAIAACHAQAAAwYSAAAEAACHAQAA</data>
-				<key>framebuffer-con0-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
+				<string>Airport Extreme</string>
 				<key>model</key>
-				<string>Intel HD Graphics 630</string>
+				<string>BCM4350 802.11ac Wireless Network Adapter</string>
+				<key>name</key>
+				<string>Airport</string>
+				<key>pci-aspm-default</key>
+				<integer>0</integer>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
 				<key>layout-id</key>
-				<integer>99</integer>
+				<integer>98</integer>
 			</dict>
 		</dict>
 		<key>Block</key>

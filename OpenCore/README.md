@@ -54,15 +54,51 @@ Main boot drive for this machine.
 ### 1TB ADATA SU800 SSD
 Windows and Ubuntu run off this drive, as well as a clone of the main SSD.
 
+## BIOS Configuration
+The section below adapted from @0ranko0P's [MSI-GL62M 7RD Hackintosh](https://github.com/0ranko0P/GL62M-7RD-Hackintosh/blob/Catalina_DW1820A/README.md). This was huge, as I never knew how to access all the advanced settings in my BIOS.
+
+**Some options only available in advanced mode:**\
+In BIOS, holding **ALT + RIGHT-CTRL + SHIFT** together then press **F2**
+
+| Settings |  |
+|--|--|
+| `CFG Lock` | Disable |
+| `CSM` | Disable |
+| Fast Boot | Disable |
+| `Intel Speed Shift`(aka. HWP) | Enable |
+| Secure Boot | Disable |
+| Enable Hiberation | Disable |
+| DVMT Pre-Allocated | 64M |
+
+<pre>
+[Advanced] tab
+├─ Power & Performance
+│  └─ CPU-Power Management Control
+│     ├─ <b>Intel(R) Speed Shift Technology</b>
+│     └─ CPU Lock Configuration
+│        └─ <b>CFG Lock</b>
+├─ System Agent (SA) Configuration
+│  └─ Graphics Configuration
+│     └─ DVMT Pre-Allocated
+├─ CSM Configuration
+│  └─ <b>CSM Support</b>
+│   
+└─ ACPI Settings
+   └─ <b>Enable Hibernation</b>
+</pre>
+
+## ACPI Patching Notes
+This laptop already has an embedded controller named EC in the DSDT, so it doesn't need to be patched.
+
 ## Installation Notes
 
 ### USB Port Limit 
 I used Hackintool to fix my USB ports, along with a few other issues. It generated a new USBPorts.kext for my system and installed it in kexts/other
 
-## Outstanding Issues
+### Fixing the framebuffer
+This has been the bane of my existence when it comes to this laptop. I finally got it working with OpenCore after ages of messing around with Hackintool patches, Skylake spoofs(that previously worked in Clover) and other people's MSI laptop setups. After recently learning how to access the BIOS settings to change the DVMT Pre-Allocated to 64m, which then allowed me to remove the 32mb DVMT-prealloc patches. Then after much trial and error, instead of using the [2 Intel HD Graphics 630 listed under Kaby Lake in the laptop guide](https://dortania.github.io/oc-laptop-guide/prepare-install-macos/display-configuration.html), I tried the Unlisted GPU mentioned right below them and now the LVDS screen no longer has a flicker. 
 
-### HD 630 Framebuffer flicker
-The screen on the laptop flickers. I've tried configurations where I can get it work with no flicker, but the external monitors don't work. Still looking for that perfect setup.
+## Outstanding Issues
 
 ### Frontend Cleanup
 Need to add a prettier boot screen and remove the debug kexts. 
