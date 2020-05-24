@@ -15,27 +15,23 @@ This is an OpenCore install for MacOS Mojave 10.15.3. This build is now a triple
 | 1TB ADATA SU800 SSD | |
 | Broadcom DW1820A BCM94350ZAE 2.4G/5G Dual Band 867Mbps M.2 NGFF WiFi Card with Bluetooth 4.1 | |
 
-### :thumbsup: Functioning Components 
+| :thumbsup: Functioning Components | :no_entry: Non-Functioning Components |
+|--|--|
+| :white_check_mark: Intel HD 630 1536mb working | :x: nVidia GTX 1050 |
+| :white_check_mark: Wifi | :x: SD card reader |
+| :white_check_mark: USB C/3.0 | 
+| :white_check_mark: Ethernet port | 
+| :white_check_mark: Audio |  
+| :white_check_mark: Microphone | 
+| :white_check_mark: iMessage/Facetime | 
+| :white_check_mark: Sleep/Wake functionality | 
+| :white_check_mark: Keyboard brightness |  
+| :white_check_mark: Screen brightness adjustment | 
+| :white_check_mark: Webcam | 
+| :white_check_mark: HDMI | 
+| :white_check_mark: Mini Display Port | 
+| :white_check_mark: Ethernet through USB C | 
 
-- :white_check_mark: Intel HD 630 1536mb working
-- :white_check_mark: Wifi  
-- :white_check_mark: USB C/3.0 
-- :white_check_mark: Ethernet port
-- :white_check_mark: Audio 
-- :white_check_mark: Microphone
-- :white_check_mark: iMessage/Facetime
-- :white_check_mark: Sleep/Wake functionality
-- :white_check_mark: Keyboard brightness 
-- :white_check_mark: Screen brightness adjustment
-- :white_check_mark: Webcam
-- :white_check_mark: HDMI
-- :white_check_mark: Mini Display Port
-- :white_check_mark: Ethernet through USB C
-
-### :no_entry: Non-Functioning Components
-
-- [ ] nVidia GTX 1050
-- [ ] SD card reader
 
 ## :muscle: Upgrades
 
@@ -84,10 +80,10 @@ In BIOS, holding **ALT + RIGHT-CTRL + SHIFT** together then press **F2**
    └─ <b>Enable Hibernation</b>
 </pre>
 
+## :notebook_with_decorative_cover: Installation Notes
+
 ## ACPI Patching Notes
 This laptop already has an embedded controller named EC in the DSDT, so it doesn't need to be patched.
-
-## :notebook_with_decorative_cover: Installation Notes
 
 ### USB Port Limit 
 I used Hackintool to fix my USB ports, along with a few other issues. It generated a new USBPorts.kext for my system and installed it in kexts/other. This iteration removes the MSI EPF USB and USB2.0-CRW SD Card Reader, as they serve no purpose.  
