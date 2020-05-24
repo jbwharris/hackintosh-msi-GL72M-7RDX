@@ -93,7 +93,7 @@ I briefly had HDMI audio, but don't quite know what exactly it was that made it 
 ### Internet freezing
 I've had this issue where if I lose connectivity, I can't seem to reset the connection and get back online. It requires a full restart. 
 
-## Useful Resource Links
+## Useful Info
 - [Vanilla Laptop Guide](https://dortania.github.io/oc-laptop-guide/)
 - [MSI GP62 Hackintosh by Chuxubank](https://github.com/chuxubank/MSI-GP62-Hackintosh)
 
