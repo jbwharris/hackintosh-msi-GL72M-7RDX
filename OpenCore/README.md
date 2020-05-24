@@ -15,10 +15,10 @@ This is an OpenCore install for MacOS Mojave 10.15.3. This build is a triple boo
 | 1TB ADATA SU800 SSD | :white_check_mark: Sleep/Wake functionality | |
 | Broadcom DW1820A BCM94350ZAE  | :white_check_mark: Keyboard brightness | |
 | Core i7 7700HQ | :white_check_mark: Screen brightness adjustment | |
-| [Manufacturers Website](https://www.msi.com/Laptop/GL72M-7RDX/Specification) | :white_check_mark: Webcam | |
-| | :white_check_mark: HDMI | |
-| | :white_check_mark: Mini Display Port | |
-| | :white_check_mark: Ethernet through USB C | |
+| Backlight Keyboard (Single-Color, Red) | :white_check_mark: Webcam | |
+| HDMI | :white_check_mark: HDMI | |
+| Mini Display Port | :white_check_mark: Mini Display Port | |
+|[Manufacturers Website](https://www.msi.com/Laptop/GL72M-7RDX/Specification) | :white_check_mark: Ethernet through USB C | |
 
 
 ## :muscle: Upgrades
