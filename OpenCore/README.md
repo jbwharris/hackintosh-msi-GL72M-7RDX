@@ -70,7 +70,7 @@ In BIOS, holding **ALT + RIGHT-CTRL + SHIFT** together then press **F2**
 
 ## :notebook_with_decorative_cover: Installation Notes
 
-## ACPI Patching Notes
+### ACPI Patching Notes
 This laptop already has an embedded controller named EC in the DSDT, so it doesn't need to be patched.
 
 ### USB Port Limit 
@@ -89,6 +89,9 @@ Bluetooth does show up in Preferences, and it will attempt to connect to devices
 
 ### HDMI Audio 
 I briefly had HDMI audio, but don't quite know what exactly it was that made it work. Need to focus on that one.
+
+### Internet freezing
+I've had this issue where if I lose connectivity, I can't seem to reset the connection and get back online. It requires a full restart. 
 
 ## Useful Resource Links
 - [Vanilla Laptop Guide](https://dortania.github.io/oc-laptop-guide/)
