@@ -3,6 +3,7 @@
 This is an OpenCore install for MacOS Mojave 10.15.3. This build is now a triple boot, Mojave, Windows 10 and Ubuntu build.
 
 | MSI GL72M 7RDX Laptop Specs | |
+|--|--|
 | Core i7 7700HQ | |
 | Intel HD 630 | |
 | GeForce® GTX 1050 with 2GB GDDR5 | |
