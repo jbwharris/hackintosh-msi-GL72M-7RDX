@@ -1,36 +1,24 @@
 #  MSI GL72M 7RDX Hackintosh Laptop
 
-This is an OpenCore install for MacOS Mojave 10.15.3. This build is now a triple boot, Mojave, Windows 10 and Ubuntu build.
+This is an OpenCore install for MacOS Mojave 10.15.3. This build is a triple boot, Mojave, Windows 10 and Ubuntu build.
 
-| MSI GL72M 7RDX Laptop Specs | |
-|--|--|
-| Core i7 7700HQ | |
-| Intel HD 630 | |
-| GeForce® GTX 1050 with 2GB GDDR5 | |
-| Intel® HM175 chipset | |
-| Realtek ALC898 | |
-| 17.3" HD display 1920x1080 | |
-| 16gb 2400mhz DDR4 | |
-| 250GB WD Blue 3D NAND PC SSD | |
-| 1TB ADATA SU800 SSD | |
-| Broadcom DW1820A BCM94350ZAE 2.4G/5G Dual Band 867Mbps M.2 NGFF WiFi Card with Bluetooth 4.1 | |
-
-| :thumbsup: Functioning Components | :no_entry: Non-Functioning Components |
-|--|--|
-| :white_check_mark: Intel HD 630 1536mb working | :x: nVidia GTX 1050 |
-| :white_check_mark: Wifi | :x: SD card reader |
-| :white_check_mark: USB C/3.0 | 
-| :white_check_mark: Ethernet port | 
-| :white_check_mark: Audio |  
-| :white_check_mark: Microphone | 
-| :white_check_mark: iMessage/Facetime | 
-| :white_check_mark: Sleep/Wake functionality | 
-| :white_check_mark: Keyboard brightness |  
-| :white_check_mark: Screen brightness adjustment | 
-| :white_check_mark: Webcam | 
-| :white_check_mark: HDMI | 
-| :white_check_mark: Mini Display Port | 
-| :white_check_mark: Ethernet through USB C | 
+### MSI GL72M 7RDX Laptop 
+| :computer: Specifications | :thumbsup: Functioning Components | :no_entry: Non-Functioning Components |
+|--|--|--|
+| Intel HD 630 | :white_check_mark: Intel HD 630 1536mb working | :x: nVidia GTX 1050 |
+| GeForce® GTX 1050 with 2GB GDDR5 | :white_check_mark: Wifi | :x: SD card reader |
+| Intel® HM175 chipset | :white_check_mark: USB C/3.0 | |
+| Realtek ALC898 | :white_check_mark: Ethernet port | |
+| 17.3" HD display 1920x1080 | :white_check_mark: Audio | |  
+| 16gb 2400mhz DDR4 | :white_check_mark: Microphone | |
+| 250GB WD Blue 3D NAND PC SSD | :white_check_mark: iMessage/Facetime | |
+| 1TB ADATA SU800 SSD | :white_check_mark: Sleep/Wake functionality | |
+| Broadcom DW1820A BCM94350ZAE  | :white_check_mark: Keyboard brightness | |
+| Core i7 7700HQ | :white_check_mark: Screen brightness adjustment | |
+| [Manufacturers Website](https://www.msi.com/Laptop/GL72M-7RDX/Specification) | :white_check_mark: Webcam | |
+| | :white_check_mark: HDMI | |
+| | :white_check_mark: Mini Display Port | |
+| | :white_check_mark: Ethernet through USB C | |
 
 
 ## :muscle: Upgrades
