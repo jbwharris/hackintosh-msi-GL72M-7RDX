@@ -1,6 +1,6 @@
 #  MSI GL72M 7RDX Hackintosh Laptop
 
-This is an OpenCore install for MacOS Mojave 10.15.3. This build is a triple boot, Mojave, Windows 10 and Ubuntu build.
+This is an OpenCore 0.6.0 install for MacOS Mojave 10.15.6. This build is a triple boot, Mojave, Windows 10 and Ubuntu build.
 
 ### MSI GL72M 7RDX Laptop 
 | :computer: Specifications | :thumbsup: Functioning Components | :no_entry: Non-Functioning Components |
@@ -79,22 +79,28 @@ I used Hackintool to fix my USB ports, along with a few other issues. It generat
 ### Fixing the framebuffer
 This has been the bane of my existence when it comes to this laptop. I finally got it working with OpenCore after ages of messing around with Hackintool patches, Skylake spoofs(that previously worked in Clover) and other people's MSI laptop setups. After recently learning how to access the BIOS settings to change the DVMT Pre-Allocated to 64m, which then allowed me to remove the 32mb DVMT-prealloc patches. Then after much trial and error, instead of using the [2 Intel HD Graphics 630 listed under Kaby Lake in the laptop guide](https://dortania.github.io/oc-laptop-guide/prepare-install-macos/display-configuration.html), I tried the Unlisted GPU `05001c59` mentioned right below them and now the LVDS screen no longer has a flicker. 
 
+### Bluetooth using DW1820A BCM94350ZAE
+I have struggled for a long time with getting the Bluetooth to work on this laptop. The thing that finally worked for me was adding 'bpr_probedelay=200 bpr_initialdelay=400 bpr_postresetdelay=400' to my boot-args. [Revised solutions to DW1820A support](https://github.com/osy86/HaC-Mini/issues/243)
+
+### Getting the touchpad and buttons to function
+[@kOOsi3](https://github.com/jbwharris/hackintosh-msi-GL72M-7RDX/issues/10#issuecomment-678415267) pointed out a solution to getting the touchpad to work. I just had to use an older Rehabman kext instead of the latest version. 
+
 ## :man_facepalming: Outstanding Issues
 
 ### Frontend Cleanup
 Need to add a prettier boot screen and remove the debug kexts. 
 
-### Bluetooth
-Bluetooth does show up in Preferences, and it will attempt to connect to devices, but it can never seem to sustain a connection. 
-
 ### HDMI Audio 
 I briefly had HDMI audio, but don't quite know what exactly it was that made it work. Need to focus on that one.
 
-### Internet freezing
-I've had this issue where if I lose connectivity, I can't seem to reset the connection and get back online. It requires a full restart. 
+### Black screen on boot and sleepwake after 10.15.4
+Apple seems to have messed something up with 10.15.4. When the machine boots, it will only show on my external monitor and not the laptop screen. I need it to sleep, then wake it up and the screen will show up on the laptop screen, but not the the external screen. Then to fix this I need to unplug and plug in the HDMI cable and everything will be fine. It's not just a Hackintosh thing, it happens with real Macs too. I've tried the couple troubleshooting options and haven't had any luck with a solution.
+
+- [Can't wake after sleep OpenCore Catalina](https://www.reddit.com/r/hackintosh/comments/g4nikv/cant_wake_after_sleep_opencore_catalina/)
+- [16" MacBook Pro Doesn't Wake Up Screen on LG 5K External Monitor](https://apple.stackexchange.com/questions/381911/16-macbook-pro-doesnt-wake-up-screen-on-lg-5k-external-monitor)
 
 ## Useful Info
-- [Vanilla Laptop Guide](https://dortania.github.io/oc-laptop-guide/)
+- [Vanilla Laptop Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 - [MSI GP62 Hackintosh by Chuxubank](https://github.com/chuxubank/MSI-GP62-Hackintosh)
 
 ### :low_brightness: Keyboard Usage Notes
