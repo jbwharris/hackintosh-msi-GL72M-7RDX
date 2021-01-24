@@ -1282,11 +1282,11 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02735300QXHWVP1M</string>
+			<string></string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>rOAQlTSx</data>
+			<data></data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -1294,9 +1294,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro14,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02V90PAHV29</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>D49D5C13-6035-4C48-A4C7-597C53D64289</string>
+			<string></string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
