@@ -63,7 +63,7 @@ The section below adapted from @0ranko0P's [MSI-GL62M 7RD Hackintosh](https://gi
 ~~This was huge, as I never knew how to access all the advanced settings in my BIOS.~~
 
 **Some options only available in advanced mode:**\
-In BIOS, holding **Right Shift + Right Ctrl + Left Alt ** together then press **F2**
+In BIOS, holding **Right Shift + Right Ctrl + Left Alt** together then press **F2**
 
 | Settings |  |
 |--|--|
