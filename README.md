@@ -1,6 +1,6 @@
 #  MSI GL72M 7RDX Hackintosh Laptop
 
-This is an OpenCore 0.6.5 install for MacOS Big Sur 11.1. This build is a triple boot, Big Sur, Windows 10 and Ubuntu build.
+This is an OpenCore 0.8.9 install for macOS Ventura 13.3. This build is a triple boot, Big Sur, Windows 10 and Ubuntu build.
 
 ### MSI GL72M 7RDX Laptop 
 | :computer: Specifications | :thumbsup: Functioning Components | :no_entry: Non-Functioning Components |
@@ -82,16 +82,8 @@ This has been the bane of my existence when it comes to this laptop. I finally g
 ### Bluetooth using DW1820A BCM94350ZAE
 I have struggled for a long time with getting the Bluetooth to work on this laptop. The thing that finally worked for me was adding 'bpr_probedelay=200 bpr_initialdelay=400 bpr_postresetdelay=400' to my boot-args. [Revised solutions to DW1820A support](https://github.com/osy86/HaC-Mini/issues/243)
 
-### Wifi using DW1820A BCM94350ZAE on Big Sur
-After getting Big Sur to work on my machine the biggest issue was getting the wifi to actually work. I had to set a boot-arg to `brcmfx-driver=2` and change the entry in for AirPortBrcm4360_Injector.kext to MaxKernel 19.9.9. That's all in the OpenCore Guide, but thought it worth flagging. 
-
 ### Getting the touchpad and buttons to function
 [@kOOsi3](https://github.com/jbwharris/hackintosh-msi-GL72M-7RDX/issues/10#issuecomment-678415267) pointed out a solution to getting the touchpad to work. I just had to use an older Rehabman kext instead of the latest version. 
-
-## :man_facepalming: Outstanding Issues
-
-### Flat audio through USB 
-I've noticed this issue lately where the audio coming through the USB C hub to my Creative speakers is really flat sounding. Then when the laptop screen goes to sleep, it'll go back to sounding good, then when woken up it's flat again. When connected via Bluetooth it sounds great, but then I can't actually push audio out to it at the same time as my Airplay speakers. Still trying to figure out an ideal solution there. 
 
 
 ## Useful Info
